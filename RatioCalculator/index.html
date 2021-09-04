@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Ratio Calculator</title>
+</head>
+<body>
+    <h1>Calculate Ratio</h1>
+    <section>
+        <!-- <div class="container mid" onchange="calculate()"> -->
+        <div class="container mid">
+            <div class="equation">
+                <div class="fraction mid">
+                    <!-- <div class="input-box"></div> -->
+                    <input type="number" class="input-box" id="numer1" >
+                    <div class="line"></div>
+                    <input type="number" class="input-box" id="denom1" >
+                </div>
+                <h1>=</h1>
+                <div class="fraction mid">
+                    <input type="number" class="input-box" id="numer2" >
+                    <div class="line"></div>
+                    <input type="number" class="input-box" id="denom2" >
+                </div>
+            </div>
+            <div class="relative"><button class="calculate" onclick="calculate()">Calculate</button></div>
+        </div>
+        <p id="message"></p>
+    </section>
+</body>
+<!-- <script
+src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+crossorigin="anonymous"></script> -->
+<script src="script.js"></script>
+</html>

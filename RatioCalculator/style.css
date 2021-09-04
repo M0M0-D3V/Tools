@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 0.5px dotted pink; */
+}
+body {
+    background-color: #fffff8;
+    color:cadetblue;
+    margin: 0 auto;
+    width: 75%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h1 {
+    text-align: center;
+}
+#message {
+    color: red;
+}
+.container {
+    width: fit-content;
+    padding: 20px;
+    height: fit-content;
+}
+
+.equation {
+    display: flex;
+    vertical-align: middle;
+}
+.equation > h1 {
+    margin: auto 10px;
+    font-size: 40pt;
+}
+.fraction {
+}
+.input-box {
+    border: 0.5px solid gray;
+    width: 100px;
+    height: 30px;
+}
+.line {
+    border: 0.5px solid black;
+    width: 100px;
+    margin: 5px 0;
+}
+.mid {
+    margin: 50px auto;
+
+}
+input {
+    text-align: right;
+    padding: 7px;
+    font-size: 16pt;
+}
+.relative {
+    position: relative;
+}
+.calculate {
+    /* margin: 0 auto; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+button.calculate {
+    background-color: cadetblue;
+    color: white;
+    padding: 7px;
+    border-radius: 15px;
+}
