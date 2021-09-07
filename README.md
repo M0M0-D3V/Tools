@@ -5,3 +5,5 @@
 
 ## Day 2 - Sep 4, 2021 - Saturday
 - implement a script in to parse through a file and change specific words to different words. Built in Python, and later converted to MEL for Maya Autodesk 
+## Day 3 - Sep 5, 2021 - Sunday
+- Covert rename script to work inside Maya ScriptEditor
