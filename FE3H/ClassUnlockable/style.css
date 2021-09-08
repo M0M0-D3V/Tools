@@ -9,12 +9,19 @@ body {
     background-color: gray;
     width: 80%;
     margin: 50px auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 h1 {
     color: lightseagreen;
 }
+select {
+    line-height: 16px;
+    height: 25px;
+}
 #select-area {
+    margin: 20px;
     display: flex;
+    justify-content: space-around;
 }
 .plus {
     border: 0.5px solid gray;
@@ -28,4 +35,9 @@ h1 {
     text-align: center;
     color: white;
     padding: 5px 15px;
+}
+.displayClass {
+    border: 0.5px solid darkgray;
+    width: 40%;
+    height: 500px;
 }

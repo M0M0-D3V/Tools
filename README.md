@@ -11,3 +11,4 @@
 - **Holiday** Took day off
 ## Day 4 - Sep 7, 2021 - Tuesday
 - Start Tool for calculating class availability in Fire Emblem 3 Houses in HTML/CSS/Javascript
+  - Made selectors and class system
