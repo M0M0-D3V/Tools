@@ -12,3 +12,5 @@
 ## Day 4 - Sep 7, 2021 - Tuesday
 - Start Tool for calculating class availability in Fire Emblem 3 Houses in HTML/CSS/Javascript
   - Made selectors and class system
+## Day 5 - Sep 8, 2021 - Wednesday
+- build a script that reads CSV files and converts to JSON
