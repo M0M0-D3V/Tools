@@ -7,3 +7,7 @@
 - implement a script in to parse through a file and change specific words to different words. Built in Python, and later converted to MEL for Maya Autodesk 
 ## Day 3 - Sep 5, 2021 - Sunday
 - Covert rename script to work inside Maya ScriptEditor
+## Day 4 - Sep 6, 2021 - Monday
+- **Holiday** Took day off
+## Day 4 - Sep 7, 2021 - Tuesday
+- Start Tool for calculating class availability in Fire Emblem 3 Houses in HTML/CSS/Javascript

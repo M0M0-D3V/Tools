@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0.5 px dotted pink;
+}
+
+body {
+    background-color: bisque;
+    width: 80%;
+    margin: 50px auto;
+}
+.plus {
+    border: 0.5px solid gray;
+    background-color: darkblue;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.plus h1 {
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    padding: 5px 15px;
+}
