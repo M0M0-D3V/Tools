@@ -442,4 +442,5 @@ const classesJSON = [
     }
 ]
 
-module.export = classesJSON
+// module.exports = classesJSON
+export { classesJSON }

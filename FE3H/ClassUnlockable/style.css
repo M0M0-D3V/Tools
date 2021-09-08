@@ -6,9 +6,15 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: gray;
     width: 80%;
     margin: 50px auto;
+}
+h1 {
+    color: lightseagreen;
+}
+#select-area {
+    display: flex;
 }
 .plus {
     border: 0.5px solid gray;

@@ -394,4 +394,5 @@ const classesKeyedJSON = {
     }
  }
 
- module.exports = classesKeyedJSON
+//  module.exports = classesKeyedJSON
+export { classesKeyedJSON }
