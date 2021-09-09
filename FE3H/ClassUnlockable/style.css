@@ -4,28 +4,47 @@
     box-sizing: border-box;
     border: 0.5 px dotted pink;
 }
-
+a:visited {
+    color: lightpink;
+}
+a:hover {
+    color: gold;
+}
 body {
-    background-color: gray;
+    background-color: #2d3e76;
     width: 80%;
     margin: 50px auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-h1 {
-    color: lightseagreen;
+#banner {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 75%;
+    border-radius: 15px;
+    display: block;
+    border: 5px solid black;
+}
+.title {
+    color: #ea3b51;
+    margin: 20px 0;
 }
 select {
     line-height: 16px;
     height: 25px;
 }
+select option::selection {
+    background-color: darkseagreen;
+}
 #select-area {
     margin: 20px;
     display: flex;
-    justify-content: space-around;
+    align-items: flex-start;
+    flex: 2;
 }
 .plus {
     border: 0.5px solid gray;
-    background-color: darkblue;
+    background-color: #101944;
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
@@ -36,8 +55,20 @@ select {
     color: white;
     padding: 5px 15px;
 }
-.displayClass {
-    border: 0.5px solid darkgray;
-    width: 40%;
-    height: 500px;
+#displayClass {
+    border: 0.5px solid white;
+    background-color: #101944;
+    padding: 20px;
+    line-height: 16pt;
+    border-radius: 5px;
+    height: fit-content;
+    margin-left: 50px;
+}
+#displayClass h5 {
+    color: #93539c;
+}
+#displayClass p {
+    margin-left: 25px;
+    text-align: right;
+    color: #e4b0ae;
 }

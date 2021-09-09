@@ -11,20 +11,24 @@
     <nav>
         <h3><a href="../../index.html">Back to main page...</a></h3>
     </nav>
-    <h1>Class isUnlockable?</h1>
+
+    <img src="./img/banner.jpg" id="banner">
+    <h1 class="title">Class isUnlockable?</h1>
+
     <!-- button to keep adding stat -->
     <button class="plus" onclick="work()">
         <h1>+</h1>
     </button>
 
+    <h3 class="title">Choose a Class to View</h3>
     <div id="select-area">
         <select id="class-names" name="fe-class" onchange="showClass()">
             <option value="none" selected disabled hidden>Select a Class</option>
             <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
         </select>
-        <div class="displayClass"></div>
+        <div id="displayClass"></div>
     </div>
 
 </body>
-<script type="module" src="script.js"></script>
+<script type="module" src="script.js" defer></script>
 </html>
