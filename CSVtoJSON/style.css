@@ -10,9 +10,13 @@ body {
 }
 #fileUploader {
     display: flex;
-    width: 50%;
     margin: 20px 0;
 }
 details {
     display: block;
+    width: 100%;
+}
+details[open] {
+    height: 450px;
+    overflow:scroll;
 }

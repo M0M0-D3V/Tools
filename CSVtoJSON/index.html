@@ -7,10 +7,20 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div id="fileUploader">
-          <input type="file" id="fileToUpload" class="form-control">
-          <button type="button" class="btn btn-info btn-md" id="btnUploadFile">Upload File</button>
+  <nav>
+    <h3><a href="../index.html">Back to main page...</a></h3>
+</nav>
+    <div class="row">
+          <div id="fileUploader" class="col-md-4">
+            <input type="file" id="fileToUpload" class="form-control">
+            <button type="button" class="btn btn-info btn-md" id="btnUploadFile">Upload File</button>
+          </div>
     </div>
+    <details>
+      <summary>View CVS to JSON</summary>
+      <pre id="code-snip">
+      </pre>
+    </details>
     <details>
         <summary>View CSV Table</summary>
         <div class="table-responsive col-md-12 csv-table" style="margin-top: 20px;">

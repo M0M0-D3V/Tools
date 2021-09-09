@@ -20,13 +20,15 @@ $(document).on("click", "#btnUploadFile", function () {
       if (lines.length == bytes) {
         line_array = line_array.splice(0, line_array.length - 1);
       }
-      var columnArray = [];
-      var stringHeader = "<thead><tr>";
-      var stringBody = "<tbody>";
+      let codeSnip = document.getElementById("code-snip")
+      codeSnip.innerHTML = "<code>"
+      let columnArray = [];
+      let stringHeader = "<thead><tr>";
+      let stringBody = "<tbody>";
       for (let i = 0; i < line_array.length; i++) {
         let cellArr = line_array[i];
         stringBody += "<tr>";
-        for (var j = 0; j < cellArr.length; j++) {
+        for (let j = 0; j < cellArr.length; j++) {
           if (i == 0) {
             columnArray.push(cellArr[j].replace("ï»¿", ""));
             stringHeader += "<th>" + columnArray[j] + "</th>";
@@ -37,6 +39,8 @@ $(document).on("click", "#btnUploadFile", function () {
               value: cellArr[j],
             });
           }
+          console.log(columnArray[j], cellArr[j])
+          codeSnip.innerHTML += `${columnArray[j]}: ${cellArr[j]} <br>`
         }
         stringBody += "</tr>";
       }
@@ -44,6 +48,8 @@ $(document).on("click", "#btnUploadFile", function () {
       stringHeader += "</tr></thead>";
       $(".csv-table table").append(stringHeader);
       $(".csv-table table").append(stringBody);
+
+      codeSnip.innerHTML += "</code>"
     }
   };
 

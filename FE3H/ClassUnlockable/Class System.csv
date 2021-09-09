@@ -1,51 +1,50 @@
-﻿Class Name,Certification,Level Seal,Proficiency,Abilities,Mastery Abilities,Specific,Characters
-Fighter,"Axe D, Bow D, or Brawl D",Beginner,"Axe +1, Bow +1, Brawl +1",,"Shove, Strength + 2",,
-Monk,"Reason D, or Faith D. Can use magic.",Beginner,"Faith +1, Reason +1",,"Draw Back, Magic +2",,
-Myrmidon,Sword D,Beginner,Sword +1,,"Speed +2, Swap",,"https://www.notion.so/Byleth-aa8219334f644d6693273dbe5dab6028, https://www.notion.so/Felix-f18dbdc73b03474fab56e12d48bec3fb"
-Soldier,Lance D,Beginner,Lance +1,,"Defense +2, Reposition",,https://www.notion.so/Dimitri-2e15a55a3a7f4dcda7b38ac50a348c8f
-Archer,Bow C,Intermediate,"Bow +2, Sword +1",Bowrange +1,Hit +20,,
-Armored Knight,"Axe C, Heavy Armor D",Intermediate,"Axe +2, Hvy Armor +2, Lance +1",,Armored Blow,,
-Brawler,Brawl C,Intermediate,"Axe +1, Brawl +2",Unarmed Combat,Unarmed Combat,Male only,
-Brigand,Axe C,Intermediate,"Axe +2, Brawl +1",,Death Blow,,
-Cavalier,"Lance C, Riding D",Intermediate,"Lance +2, Riding +2, Sword +1",Canto,Desperation,,
-Dark Mage,"Reason C, Dark Seal. Can use magic.",Intermediate,"Faith +1, Reason +2","Heartseeker, Miasma",Poison Strike,Male only,
-Mage,Reason C. Can use magic.,Intermediate,"Faith +1, Reason +2",Fire,Fiendish Blow,,"https://www.notion.so/Hanneman-8ead5371f8ad42b2ae69af7d15c86171, https://www.notion.so/Dorothea-cafda92f88b7492b92c672ca5695b79b"
-Mercenary,Sword C,Intermediate,"Axe +1, Sword +2",,Vantage,,
-Pegasus Knight,"Lance C, Flying D",Intermediate,"Flying +2, Lance +2, Sword +1","Avo +10, Canto","Darting Blow, Triangle Attack",Female only,https://www.notion.so/Flayn-f597cda3053244e88e492b2c4a202f07
-Priest,Faith C. Can use magic.,Intermediate,"Faith +2, Reason +1","Heal, White Magic Heal +5",Miracle,,
-Thief,Sword C,Intermediate,"Bow +1, Sword +2","Locktouch, Steal",Steal,,"https://www.notion.so/Byleth-aa8219334f644d6693273dbe5dab6028, https://www.notion.so/Felix-f18dbdc73b03474fab56e12d48bec3fb"
-Bow Knight,"Lance C, Bow A, Riding A",Master,"Bow +3, Lance +3, Riding +3","Bowfaire, Bowrange +2, Canto",Defiant Spd,,
-Dark Knight,"Lance C, Reason B+, Riding A. Can use magic",Master,"Lance +3, Reason +3, Riding +3","Black Tomefaire, Canto, Dark Tomefaire",Seal Resistance,,
-Falcon Knight,"Sword C, Lance A, Flying B+",Master,"Flying +3, Lance +3, Sword +3","Avo +10, Canto, Lancefaire",Defiant Avo,Female only,
-Great Knight,"Axe B+, Heavy Armor A, Riding B+",Master,"Axe +3, Hvy Armor +3, Lance +3","Axefaire, Canto, Lancefaire",Defiant Def,,
-Gremory,"Reason A, Faith A. Can use magic",Master,"Faith +3, Reason +3","Black Magic Uses x2, Dark Magic Uses x2, White Magic Uses x2",Defiant Mag,Female only,
-Holy Knight,"Lance C, Faith B+, Riding A. Can use magic",Master,"Faith +3, Lance +3, Riding +3","Canto, Terrain Resistance, White Tomefaire",Defiant Res,,
-Mortal Savant,"Sword A, Reason B+. Can use magic",Master,"Reason +3, Sword +3","Black Tomefaire, Swordfaire",Warding Blow,,
-War Master,"Axe A, Brawl A",Master,"Axe +3, Brawl +3","Axefaire, Crit +20, Fistfaire","Quick Riposte, War Master's Strike",Male only,
-Wyvern Lord,"Lance C, Axe A, Flying A",Master,"Axe +3, Flying +3, Lance +3","Avo +10, Axefaire, Canto",Defiant Crit,,
-Armored Lord,Start of Chapter 13,Lord,"Authority +3, Axe +3, Hvy Armor +3","Axefaire, Charm",Pomp & Circumstance,Edelgard only,
-Barbarossa,Start of Chapter 17,Lord,"Authority +3, Bow +3, Flying +3","Bowfaire, Canto, Charm",Wind God,Claude only,
-Emperor,Start of Chapter 16,Lord,"Authority +3, Axe +3, Hvy Armor +3","Axefaire, Charm",Flickering Flower,Edelgard only,
-Great Lord,Start of Chapter 16,Lord,"Authority +3, Lance +3, Sword +3","Charm, Lancefaire",Paraselene,Dimitri only,
-High Lord,Start of Chapter 13,Lord,"Authority +3, Lance +3, Sword +3","Charm, Lancefaire",Pomp & Circumstance,Dimitri only,https://www.notion.so/Dimitri-2e15a55a3a7f4dcda7b38ac50a348c8f
-Lord,"Sword D+, Authority C",Lord,"Authority +2, Lance +1, Sword +2",Charm,"Resistance +2, Subdue",House Leaders only,https://www.notion.so/Dimitri-2e15a55a3a7f4dcda7b38ac50a348c8f
-Wyvern Master,Start of Chapter 13,Lord,"Authority +3, Bow +3, Flying +3","Bowfaire, Canto, Charm",Pomp & Circumstance,Claude only,
-Commoner,Can use magic at half uses,Unique,,,HP +5,,
-Noble,Can use magic at half uses,Unique,,,HP +5,,https://www.notion.so/Dimitri-2e15a55a3a7f4dcda7b38ac50a348c8f
-Dancer,Win the White Heron Cup. Can use magic,Unique,"Authority +2, Sword +2",Dance,Special Dance,,https://www.notion.so/Dedue-45147fbaf5d848ef8f50c22d28cf4dce
-Enlightened One,Start of Chapter 11. Can use magic,Unique,"Authority +3, Brawl +2, Faith +3, Sword +3","Swordfaire, Terrain Resistance",Sacred Power,Byleth only,https://www.notion.so/Byleth-aa8219334f644d6693273dbe5dab6028
-Archbishop,Can use magic,Unique,"Authority +3, Faith +3, Sword +3","Charm, Commander, Terrain Resistance",Sacred Power,Rhea only,
-Death Knight,Can use magic,,"Lance +3, Reason +3, Riding +3","Canto, Lancefaire",Counterattack,Death Knight only,
-Swordmaster,Sword A,Advanced,Sword +3,"Sword Critical +10, Swordfaire",Astra,,"https://www.notion.so/Catherine-2a51c131fcaf4a1783dd176253829ee0, https://www.notion.so/Byleth-aa8219334f644d6693273dbe5dab6028, https://www.notion.so/Felix-f18dbdc73b03474fab56e12d48bec3fb"
-Hero,"Sword B, Axe C",Advanced,"Axe +2, Sword +3","Swordfaire, Vantage",Defiant Str,Male only,
-Assassin,"Sword B, Bow C",Advanced,"Bow +2, Sword +3","Locktouch, Stealth, Swordfaire","Assassinate, Lethality",,https://www.notion.so/Ignatz-1d0802f692a641b3bb21d6aab1bdcc7b
-Paladin,"Lance B, Riding B",Advanced,"Lance +3, Riding +3, Sword +2","Canto, Lancefaire, Terrain Resistance",Aegis,,"https://www.notion.so/Dimitri-2e15a55a3a7f4dcda7b38ac50a348c8f, https://www.notion.so/Ingrid-5c26512c88014c60b2c4576bc776a782, https://www.notion.so/Sylvain-64068ff8f08b4c6c8388f5f0139171ed"
-Warrior,Axe A,Advanced,Axe +3,"Axe Critical +10, Axefaire",Wrath,,
-Fortress Knight,"Axe B, Heavy Armor B",Advanced,"Axe +3, Hvy Armor +3, Lance +2","Axefaire, Weight -5",Pavise,,https://www.notion.so/Gilbert-dadd206b49284973a987a4ba446d0bf0
-Wyvern Rider,"Axe B, Flying C",Advanced,"Axe +3, Flying +3, Lance +2","Axefaire, Canto",Seal Defense,,"https://www.notion.so/Seteth-f2f002f6018f458d8a1a80618a9983d0, https://www.notion.so/Cyril-d425f544c7854a838bcaaebcdf963e09"
-Sniper,Bow A,Advanced,Bow +3,"Bowfaire, Bowrange +1",Hunter's Volley,,"https://www.notion.so/Shamir-425c020355044b67a841ec553e45fbe1, https://www.notion.so/Ashe-ef68deacb73f403abb8a79933262df4a"
-Grappler,Brawl A,Advanced,Brawl +3,"Fistfaire, Unarmed Combat","Fierce Iron Fist, Tomebreaker",Male only,
-Warlock,Reason A. Can use magic,Advanced,"Faith +2, Reason +3","Black Magic Uses x2, Black Tomefaire",Bowbreaker,,
-Dark Bishop,Reason A (Dark Mage qualification Dark Seal),Advanced,"Faith +2, Reason +3","Fiendish Blow, Heartseeker, Miasma",Lifetaker,Male only,
-Bishop,Faith A. Can use magic,Advanced,"Faith +3, Reason +2","Terrain Resistance, White Magic Heal +10, White Magic Uses x2",Renewal,,"https://www.notion.so/Mercedes-fe420e0c1fae42d6be6beaf637be218d, https://www.notion.so/Manuela-8869327a3c794008a21314fa57f75be2, https://www.notion.so/Flayn-f597cda3053244e88e492b2c4a202f07"
-,,,,,,,
+﻿Class Name,Certification,Level Seal,Proficiency,Abilities,Mastery Abilities,Specific
+Fighter,"Axe D, Bow D, or Brawl D",Beginner,"Axe +1, Bow +1, Brawl +1",,"Shove, Strength + 2",
+Monk,"Reason D, or Faith D. Can use magic.",Beginner,"Faith +1, Reason +1",,"Draw Back, Magic +2",
+Myrmidon,Sword D,Beginner,Sword +1,,"Speed +2, Swap",
+Soldier,Lance D,Beginner,Lance +1,,"Defense +2, Reposition",
+Archer,Bow C,Intermediate,"Bow +2, Sword +1",Bowrange +1,Hit +20,
+Armored Knight,"Axe C, Heavy Armor D",Intermediate,"Axe +2, Hvy Armor +2, Lance +1",,Armored Blow,
+Brawler,Brawl C,Intermediate,"Axe +1, Brawl +2",Unarmed Combat,Unarmed Combat,Male only
+Brigand,Axe C,Intermediate,"Axe +2, Brawl +1",,Death Blow,
+Cavalier,"Lance C, Riding D",Intermediate,"Lance +2, Riding +2, Sword +1",Canto,Desperation,
+Dark Mage,"Reason C, Dark Seal. Can use magic.",Intermediate,"Faith +1, Reason +2","Heartseeker, Miasma",Poison Strike,Male only
+Mage,Reason C. Can use magic.,Intermediate,"Faith +1, Reason +2",Fire,Fiendish Blow,
+Mercenary,Sword C,Intermediate,"Axe +1, Sword +2",,Vantage,
+Pegasus Knight,"Lance C, Flying D",Intermediate,"Flying +2, Lance +2, Sword +1","Avo +10, Canto","Darting Blow, Triangle Attack",Female only
+Priest,Faith C. Can use magic.,Intermediate,"Faith +2, Reason +1","Heal, White Magic Heal +5",Miracle,
+Thief,Sword C,Intermediate,"Bow +1, Sword +2","Locktouch, Steal",Steal,
+Bow Knight,"Lance C, Bow A, Riding A",Master,"Bow +3, Lance +3, Riding +3","Bowfaire, Bowrange +2, Canto",Defiant Spd,
+Dark Knight,"Lance C, Reason B+, Riding A. Can use magic",Master,"Lance +3, Reason +3, Riding +3","Black Tomefaire, Canto, Dark Tomefaire",Seal Resistance,
+Falcon Knight,"Sword C, Lance A, Flying B+",Master,"Flying +3, Lance +3, Sword +3","Avo +10, Canto, Lancefaire",Defiant Avo,Female only
+Great Knight,"Axe B+, Heavy Armor A, Riding B+",Master,"Axe +3, Hvy Armor +3, Lance +3","Axefaire, Canto, Lancefaire",Defiant Def,
+Gremory,"Reason A, Faith A. Can use magic",Master,"Faith +3, Reason +3","Black Magic Uses x2, Dark Magic Uses x2, White Magic Uses x2",Defiant Mag,Female only
+Holy Knight,"Lance C, Faith B+, Riding A. Can use magic",Master,"Faith +3, Lance +3, Riding +3","Canto, Terrain Resistance, White Tomefaire",Defiant Res,
+Mortal Savant,"Sword A, Reason B+. Can use magic",Master,"Reason +3, Sword +3","Black Tomefaire, Swordfaire",Warding Blow,
+War Master,"Axe A, Brawl A",Master,"Axe +3, Brawl +3","Axefaire, Crit +20, Fistfaire","Quick Riposte, War Master's Strike",Male only
+Wyvern Lord,"Lance C, Axe A, Flying A",Master,"Axe +3, Flying +3, Lance +3","Avo +10, Axefaire, Canto",Defiant Crit,
+Armored Lord,Start of Chapter 13,Lord,"Authority +3, Axe +3, Hvy Armor +3","Axefaire, Charm",Pomp & Circumstance,Edelgard only
+Barbarossa,Start of Chapter 17,Lord,"Authority +3, Bow +3, Flying +3","Bowfaire, Canto, Charm",Wind God,Claude only
+Emperor,Start of Chapter 16,Lord,"Authority +3, Axe +3, Hvy Armor +3","Axefaire, Charm",Flickering Flower,Edelgard only
+Great Lord,Start of Chapter 16,Lord,"Authority +3, Lance +3, Sword +3","Charm, Lancefaire",Paraselene,Dimitri only
+High Lord,Start of Chapter 13,Lord,"Authority +3, Lance +3, Sword +3","Charm, Lancefaire",Pomp & Circumstance,Dimitri only
+Lord,"Sword D+, Authority C",Lord,"Authority +2, Lance +1, Sword +2",Charm,"Resistance +2, Subdue",House Leaders only
+Wyvern Master,Start of Chapter 13,Lord,"Authority +3, Bow +3, Flying +3","Bowfaire, Canto, Charm",Pomp & Circumstance,Claude only
+Commoner,Can use magic at half uses,Unique,,,HP +5,
+Noble,Can use magic at half uses,Unique,,,HP +5,
+Dancer,Win the White Heron Cup. Can use magic,Unique,"Authority +2, Sword +2",Dance,Special Dance,
+Enlightened One,Start of Chapter 11. Can use magic,Unique,"Authority +3, Brawl +2, Faith +3, Sword +3","Swordfaire, Terrain Resistance",Sacred Power,Byleth only
+Archbishop,Can use magic,Unique,"Authority +3, Faith +3, Sword +3","Charm, Commander, Terrain Resistance",Sacred Power,Rhea only
+Death Knight,Can use magic,,"Lance +3, Reason +3, Riding +3","Canto, Lancefaire",Counterattack,Death Knight only
+Swordmaster,Sword A,Advanced,Sword +3,"Sword Critical +10, Swordfaire",Astra,
+Hero,"Sword B, Axe C",Advanced,"Axe +2, Sword +3","Swordfaire, Vantage",Defiant Str,Male only
+Assassin,"Sword B, Bow C",Advanced,"Bow +2, Sword +3","Locktouch, Stealth, Swordfaire","Assassinate, Lethality",
+Paladin,"Lance B, Riding B",Advanced,"Lance +3, Riding +3, Sword +2","Canto, Lancefaire, Terrain Resistance",Aegis,
+Warrior,Axe A,Advanced,Axe +3,"Axe Critical +10, Axefaire",Wrath,
+Fortress Knight,"Axe B, Heavy Armor B",Advanced,"Axe +3, Hvy Armor +3, Lance +2","Axefaire, Weight -5",Pavise,
+Wyvern Rider,"Axe B, Flying C",Advanced,"Axe +3, Flying +3, Lance +2","Axefaire, Canto",Seal Defense,
+Sniper,Bow A,Advanced,Bow +3,"Bowfaire, Bowrange +1",Hunter's Volley,
+Grappler,Brawl A,Advanced,Brawl +3,"Fistfaire, Unarmed Combat","Fierce Iron Fist, Tomebreaker",Male only
+Warlock,Reason A. Can use magic,Advanced,"Faith +2, Reason +3","Black Magic Uses x2, Black Tomefaire",Bowbreaker,
+Dark Bishop,Reason A (Dark Mage qualification Dark Seal),Advanced,"Faith +2, Reason +3","Fiendish Blow, Heartseeker, Miasma",Lifetaker,Male only
+Bishop,Faith A. Can use magic,Advanced,"Faith +3, Reason +2","Terrain Resistance, White Magic Heal +10, White Magic Uses x2",Renewal,
