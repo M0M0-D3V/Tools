@@ -20,14 +20,12 @@ console.log("you rang boss?")
 // POPULATE THE SELECT OPTIONS WITH CLASS NAMES
 let selectNames = document.getElementById("class-names")
 let classesLength = classesJSON.length
-
 for (let i = 0; i < classesLength; i++) {
     let newOption = document.createElement("option")
     newOption.setAttribute("value", i)
     newOption.innerHTML = classesJSON[i]["Class Name"]
     selectNames.appendChild(newOption)
 }
-
 // POPULATE STAT LIST AS OPTIONS
 let selectStats = document.getElementById("stats0")
 let stats = ["Sword", "Axe", "Bow", "Brawl", "Authority", "Reason", "Faith", "Heavy Armor", "Lance", "Riding", "Flying"]
@@ -37,7 +35,6 @@ for (let i = 0; i < stats.length; i++) {
     statOption.innerHTML = stats[i]
     selectStats.appendChild(statOption)
 }
-
 // POPULATE LEVELS LIST AS OPTIONS
 let selectLevels = document.getElementById("level0")
 let levels = ["E", "E+", "D", "D+", "C", "C+", "B", "B+", "A", "A+", "S"]
@@ -73,6 +70,21 @@ window.work = function work() {
 // this will check the classesJSON for the various stats and levels and return what classes fit the stats by level
 window.runAlgorithm = function runAlgorithm() {
     console.log("we are running yo")
+    let inputs = []
+    // loop to get elements pushed inside input array as strings
+    let number = 0
+    while(document.getElementById(`stats${number}`) != null) {
+        let stat = document.getElementById(`stats${number}`).selectedIndex
+        let name = document.getElementsByTagName("option")[stat].value
+        let level = document.getElementById(`level${number}`).selectedIndex
+        let skill = document.getElementsByTagName("option")[level].value
+        let text = `${stats[name]} ${skill}`
+        inputs.push(text)
+        number++
+    }
+    console.log(inputs)
+    // loop classesJSON.Certification to find string value(s) in array
+    // find level string from levelIndex and return number value
 }
 
 // this function retrieves class information when it is chosen from drop down

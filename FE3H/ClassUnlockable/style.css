@@ -57,7 +57,7 @@ select option::selection {
     color: white;
     padding: 5px 15px;
 }
-#displayClass {
+#displayClass, #displayResults {
     border: 0.5px solid white;
     background-color: #101944;
     padding: 20px;
@@ -65,11 +65,12 @@ select option::selection {
     border-radius: 5px;
     height: fit-content;
     margin-left: 50px;
+    margin-top: 10px;
 }
-#displayClass h5 {
+#displayClass h5, #displayResults h5 {
     color: #93539c;
 }
-#displayClass p {
+#displayClass p, #displayResults p {
     margin-left: 25px;
     text-align: right;
     color: #e4b0ae;
