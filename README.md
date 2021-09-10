@@ -16,3 +16,5 @@
 ## Day 5 - Sep 8, 2021 - Wednesday
 - build a script that reads CSV files and converts to HTML Table
 - build code read from same CSV
+## Day 6 - Sep 9, 2021 - Thursday
+- Continue Fire Emblem tool to determine class

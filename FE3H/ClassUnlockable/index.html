@@ -15,7 +15,7 @@
     <img src="./img/banner.jpg" id="banner">
     
     <h3 class="title">Choose a Class to View</h3>
-    <div id="select-area">
+    <div id="select-area d-flex">
         <select id="class-names" name="fe-class" onchange="showClass()">
             <option value="none" selected disabled hidden>Select a Class</option>
             <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
@@ -23,11 +23,22 @@
         <div id="displayClass"></div>
     </div>
     <h3 class="title">Class isUnlockable?</h3>
-
+    
     <!-- button to keep adding stat -->
-    <button class="plus" onclick="work()">
-        <h1>+</h1>
-    </button>
+    <div id="stats-area">
+        <select id="stats0" name="stats0" class="stats">
+            <option value="none" selected disabled hidden>Select Stat</option>
+            <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
+        </select>
+        <select id="level0" name="level0" class="levels">
+            <option value="none" selected disabled hidden>Select Level</option>
+            <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
+        </select>
+        <button class="plus" onclick="work()">
+            <h1>+</h1>
+        </button>
+        <button id="daButton" onclick="runAlgorithm()">Check Classes</button>
+    </div>
 
 </body>
 <script type="module" src="script.js" defer></script>

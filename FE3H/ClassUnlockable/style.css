@@ -36,11 +36,13 @@ select {
 select option::selection {
     background-color: darkseagreen;
 }
-#select-area {
-    margin: 20px;
+.d-flex {
     display: flex;
+}
+#select-area {
     align-items: flex-start;
     flex: 2;
+    margin: 20px;
 }
 .plus {
     border: 0.5px solid gray;
@@ -71,4 +73,13 @@ select option::selection {
     margin-left: 25px;
     text-align: right;
     color: #e4b0ae;
+}
+.stats, .levels {
+    margin-left: 5px;
+}
+#daButton {
+    background-color: #916aae;
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
 }
