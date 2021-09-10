@@ -17,4 +17,4 @@
 - build a script that reads CSV files and converts to HTML Table
 - build code read from same CSV
 ## Day 6 - Sep 9, 2021 - Thursday
-- Continue Fire Emblem tool to determine class
+- Continue Fire Emblem tool to determine class by first making clones of select menus
