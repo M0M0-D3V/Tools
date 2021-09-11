@@ -84,6 +84,9 @@ window.runAlgorithm = function runAlgorithm() {
     }
     console.log(inputs)
     // loop classesJSON.Certification to find string value(s) in array
+    for(let i = 0; i < classesJSON.length; i++) {
+        console.log(`${classesJSON[i]["Class Name"]}: ${classesJSON[i].Certification}`)
+    }
     // find level string from levelIndex and return number value
 }
 
