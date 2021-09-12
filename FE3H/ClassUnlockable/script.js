@@ -86,6 +86,18 @@ window.runAlgorithm = function runAlgorithm() {
     // loop classesJSON.Certification to find string value(s) in array
     for(let i = 0; i < classesJSON.length; i++) {
         console.log(`${classesJSON[i]["Class Name"]}: ${classesJSON[i].Certification}`)
+        let temp = `${classesJSON[i]["Class Name"]} ${classesJSON[i].Certification}`
+        if(!classesJSON[i].Certification.includes(",")) {
+            for(let j = 0; j < inputs.length; j++) {
+                let stat = inputs[j].slice(0, -1)
+                let level = inputs[j].slice(-1)
+                let compare = stat + levels[level]
+                console.log(`*******${compare}`)
+                if(compare == classesJSON[i].Certification) {
+                    document.getElementById("displayResults").innerHTML = `<h5>${classesJSON[i]["Class Name"]}</h5>`
+                }
+            }
+        }
     }
     // find level string from levelIndex and return number value
 }
