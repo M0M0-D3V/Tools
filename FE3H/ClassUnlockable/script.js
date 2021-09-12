@@ -73,6 +73,8 @@ window.runAlgorithm = function runAlgorithm() {
     let inputs = []
     // loop to get elements pushed inside input array as strings
     let number = 0
+    // reset displayResults
+    document.getElementById("displayResults").innerHTML = ""
     while(document.getElementById(`stats${number}`) != null) {
         let stat = document.getElementById(`stats${number}`).selectedIndex
         let name = document.getElementsByTagName("option")[stat].value
@@ -87,17 +89,22 @@ window.runAlgorithm = function runAlgorithm() {
     for(let i = 0; i < classesJSON.length; i++) {
         console.log(`${classesJSON[i]["Class Name"]}: ${classesJSON[i].Certification}`)
         let temp = `${classesJSON[i]["Class Name"]} ${classesJSON[i].Certification}`
+        // checks if JSON has single stat
         if(!classesJSON[i].Certification.includes(",")) {
             for(let j = 0; j < inputs.length; j++) {
+                // [] extract this as callable function to convert stats and compare from inputs to JSON
+                // [] create a way to evaulate if >= than JSON value
                 let stat = inputs[j].slice(0, -1)
                 let level = inputs[j].slice(-1)
                 let compare = stat + levels[level]
                 console.log(`*******${compare}`)
+                // [] extract this as a callable function to push results onto page
                 if(compare == classesJSON[i].Certification) {
-                    document.getElementById("displayResults").innerHTML = `<h5>${classesJSON[i]["Class Name"]}</h5>`
+                    document.getElementById("displayResults").innerHTML += `<h5>${classesJSON[i]["Class Name"]}: ${classesJSON[i]["Certification"]}</h5>`
                 }
             }
         }
+        // if multiple stats, split it into array and loop
     }
     // find level string from levelIndex and return number value
 }
