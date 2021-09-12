@@ -18,3 +18,7 @@
 - build code read from same CSV
 ## Day 6 - Sep 9, 2021 - Thursday
 - Continue Fire Emblem tool to determine class by first making clones of select menus
+## Day 7 - Sep 10, 2021 - Friday
+- Continue Fire Emblem tool, to start the algorithm, short day
+## Day 8 - Sep 11, 2021 - Saturday
+- Continue yesterday's algorithm
