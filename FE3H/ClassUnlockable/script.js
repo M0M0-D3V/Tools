@@ -96,10 +96,11 @@ window.runAlgorithm = function runAlgorithm() {
                 // [] create a way to evaulate if >= than JSON value
                 let stat = inputs[j].slice(0, -1)
                 let level = inputs[j].slice(-1)
-                let compare = stat + levels[level]
-                console.log(`*******${compare}`)
+                let lvlAsStr = stat + levels[level]
+                console.log(`*******${lvlAsStr}`)
+                let thisCert = classesJSON[i].Certification
                 // [] extract this as a callable function to push results onto page
-                if(compare == classesJSON[i].Certification) {
+                if(lvlAsStr ==  thisCert) {
                     document.getElementById("displayResults").innerHTML += `<h5>${classesJSON[i]["Class Name"]}: ${classesJSON[i]["Certification"]}</h5>`
                 }
             }
