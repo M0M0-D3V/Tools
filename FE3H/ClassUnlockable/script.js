@@ -87,8 +87,7 @@ window.runAlgorithm = function runAlgorithm() {
     console.log(inputs)
     // loop classesJSON.Certification to find string value(s) in array
     for(let i = 0; i < classesJSON.length; i++) {
-        console.log(`${classesJSON[i]["Class Name"]}: ${classesJSON[i].Certification}`)
-        let temp = `${classesJSON[i]["Class Name"]} ${classesJSON[i].Certification}`
+        let temp = `${classesJSON[i]["Class Name"]}: ${classesJSON[i].Certification}`
         // checks if JSON has single stat
         if(!classesJSON[i].Certification.includes(",")) {
             for(let j = 0; j < inputs.length; j++) {
@@ -97,11 +96,24 @@ window.runAlgorithm = function runAlgorithm() {
                 let stat = inputs[j].slice(0, -1)
                 let level = inputs[j].slice(-1)
                 let lvlAsStr = stat + levels[level]
-                console.log(`*******${lvlAsStr}`)
                 let thisCert = classesJSON[i].Certification
+                let thisStat = ""
+                let thisStatLvl = 0
+                if(thisCert.slice(-1) == "+") {
+                    thisStat = classesJSON[i].Certification.slice(0, -3)
+                    thisStatLvl = levels[thisCert.indexOf(thisCert.slice(-2))]
+                }
+                else {
+                    if(levels.includes(thisCert.slice(-1))) {
+                        thisStat = classesJSON[i].Certification.slice(0, -2)
+                        thisStatLvl = levels.indexOf(thisCert.slice(-1))
+                    }
+                }
                 // [] extract this as a callable function to push results onto page
-                if(lvlAsStr ==  thisCert) {
-                    document.getElementById("displayResults").innerHTML += `<h5>${classesJSON[i]["Class Name"]}: ${classesJSON[i]["Certification"]}</h5>`
+                // if(lvlAsStr ==  thisCert) {
+                if(stat.slice(0, -1) ==  thisStat && level >= thisStatLvl) {
+                    console.log("yup")
+                    document.getElementById("displayResults").innerHTML += `<h5>${temp}</h5>`
                 }
             }
         }
