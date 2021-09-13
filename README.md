@@ -22,3 +22,5 @@
 - Continue Fire Emblem tool, to start the algorithm, short day
 ## Day 8 - Sep 11, 2021 - Saturday
 - Continue yesterday's algorithm
+## Day 9 - Sep 12, 2021 - Sunday
+- Continue algorithm, finished single stat with multi value comparisons
