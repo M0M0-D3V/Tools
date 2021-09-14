@@ -23,4 +23,6 @@
 ## Day 8 - Sep 11, 2021 - Saturday
 - Continue yesterday's algorithm
 ## Day 9 - Sep 12, 2021 - Sunday
-- Continue algorithm, finished single stat with multi value comparisons
+- Continue algorithm, finished single stat with multi input comparisons
+## Day 10 - Sep 13, 2021 - Monday
+- Start the other part of algorithm where it searches for stats in classes that require multiple input matches
