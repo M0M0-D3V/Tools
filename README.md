@@ -1,4 +1,5 @@
 # 100 days of code challenge
+- visit on: https://m0m0-d3v.github.io/Tools/
 
 ## Day 1 - Sep 3, 2021 - Friday
 - built a Ratio Calculator in HTML/CSS/Vanilla JS to give the missing number for cross multiplication
