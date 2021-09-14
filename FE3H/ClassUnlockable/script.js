@@ -95,6 +95,9 @@ window.runAlgorithm = function runAlgorithm() {
                 // [] create a way to evaulate if >= than JSON value
                 let stat = inputs[j].slice(0, -1)
                 let level = inputs[j].slice(-1)
+                if(inputs[j].slice(-2, -1) == "1") {
+                    level = inputs[j].slice(-2)
+                }
                 let lvlAsStr = stat + levels[level]
                 let thisCert = classesJSON[i].Certification
                 let thisStat = ""
@@ -110,8 +113,7 @@ window.runAlgorithm = function runAlgorithm() {
                     }
                 }
                 // [] extract this as a callable function to push results onto page
-                // if(lvlAsStr ==  thisCert) {
-                if(stat.slice(0, -1) ==  thisStat && level >= thisStatLvl) {
+                if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
                     console.log("yup")
                     document.getElementById("displayResults").innerHTML += `<h5>${temp}</h5>`
                 }
