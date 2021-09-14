@@ -92,7 +92,7 @@ window.runAlgorithm = function runAlgorithm() {
         if(!classesJSON[i].Certification.includes(",")) {
             for(let j = 0; j < inputs.length; j++) {
                 // [] extract this as callable function to convert stats and compare from inputs to JSON
-                // [] create a way to evaulate if >= than JSON value
+                // [x] create a way to evaulate if >= than JSON value
                 let stat = inputs[j].slice(0, -1)
                 let level = inputs[j].slice(-1)
                 if(inputs[j].slice(-2, -1) == "1") {
@@ -120,6 +120,12 @@ window.runAlgorithm = function runAlgorithm() {
             }
         }
         // if multiple stats, split it into array and loop
+        else {
+            let certArray = classesJSON[i].Certification.split(", ")
+            if(classesJSON[i]["Level Seal"] == "Beginner"){
+
+            }
+        }
     }
     // find level string from levelIndex and return number value
 }
