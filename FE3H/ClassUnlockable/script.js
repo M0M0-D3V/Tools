@@ -52,7 +52,7 @@ window.work = function work() {
     while(document.getElementById(`stats${number}`) != null) {
         number++
     }
-    if(number <= 10) {
+    if(number <= stats.length) {
         let prevStat = document.getElementById(`stats${number - 1}`)
         let prevLevel = document.getElementById(`level${number - 1}`)
         let newStat = prevStat.cloneNode(true)
@@ -104,12 +104,12 @@ window.runAlgorithm = function runAlgorithm() {
                 let thisStat = ""
                 let thisStatLvl = 0
                 if(thisCert.slice(-1) == "+") {
-                    thisStat = classesJSON[i].Certification.slice(0, -3)
+                    thisStat = thisCert.slice(0, -3)
                     thisStatLvl = levels[thisCert.indexOf(thisCert.slice(-2))]
                 }
                 else {
                     if(levels.includes(thisCert.slice(-1))) {
-                        thisStat = classesJSON[i].Certification.slice(0, -2)
+                        thisStat = thisCert.slice(0, -2)
                         thisStatLvl = levels.indexOf(thisCert.slice(-1))
                     }
                 }
@@ -124,18 +124,47 @@ window.runAlgorithm = function runAlgorithm() {
         else {
             let certArray = classesJSON[i].Certification.split(", ")
             for(let j = 0; j < certArray.length; j++) {
-                // beginner classes have 'OR' requirements
-                if(classesJSON[i]["Level Seal"] == "Beginner"){
-                    console.log(`${classesJSON[i]["Class Name"]} has multiple stats and is beginner class. Function still working in progress`)
-                }
-                // non beginner classes have 'AND' requirements
-                else {
-                    console.log(`${classesJSON[i]["Class Name"]} has multiple stats and is not a beginner class. This function still in progress`)
+                // 3rd loop to now compare certArray and inputs
+                for(let k = 0; k < inputs.length; k++) {
+                    // brute force, copying above for loop straight in...
+                    // [] figure out how to refactor later
+                    let stat = inputs[k].slice(0, -1)
+                    let level = inputs[k].slice(-1)
+                    if(inputs[k].slice(-2, -1) == "1") {
+                        level = inputs[k].slice(-2)
+                    }
+                    let thisCert = certArray[j]
+                    let thisStat = ""
+                    let thisStatLvl = 0
+                    if(thisCert.slice(-1) == "+") {
+                        thisStat = thisCert.slice(0, -3)
+                        thisStatLvl = levels.indexOf(thisCert.slice(-2))
+                    }
+                    else {
+                        if(levels.includes(thisCert.slice(-1))) {
+                            thisStat = thisCert.slice(0, -2)
+                            thisStatLvl = levels.indexOf(thisCert.slice(-1))
+                        }
+                    }
+                    // beginner classes have 'OR' requirements
+                    if(classesJSON[i]["Level Seal"] == "Beginner"){
+                        console.log(`+++ ${classesJSON[i]["Class Name"]} has multiple stats and is beginner class.`)
+                        // [] extract this as a callable function to push results onto page
+                        if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
+                            console.log("yup")
+                            document.getElementById("display-results").innerHTML += `<h5>${temp}</h5>`
+                        }
+                
+                    }
+                    // non beginner classes have 'AND' requirements
+                    else {
+                        console.log(`xxx ${classesJSON[i]["Class Name"]} has multiple stats and is not a beginner class.`)
+                        // temp array to push in matching stats and c
+                    }
                 }
             }
         }
     }
-    // find level string from levelIndex and return number value
 }
 
 // this function retrieves class information when it is chosen from drop down

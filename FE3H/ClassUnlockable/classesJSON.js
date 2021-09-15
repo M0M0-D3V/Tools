@@ -1,7 +1,7 @@
 const classesJSON = [
     {
       "Class Name": "Fighter",
-      "Certification": "Axe D, Bow D, or Brawl D",
+      "Certification": "Axe D, Bow D, Brawl D",
       "Level Seal": "Beginner",
       "Proficiency": "Axe +1, Bow +1, Brawl +1",
       "Abilities": "",
@@ -11,7 +11,7 @@ const classesJSON = [
     },
     {
       "Class Name": "Monk",
-      "Certification": "Reason D, or Faith D",
+      "Certification": "Reason D, Faith D",
       "Level Seal": "Beginner",
       "Proficiency": "Faith +1, Reason +1",
       "Abilities": "",
