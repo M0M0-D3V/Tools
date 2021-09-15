@@ -70,11 +70,12 @@ window.work = function work() {
 // this will check the classesJSON for the various stats and levels and return what classes fit the stats by level
 window.runAlgorithm = function runAlgorithm() {
     console.log("we are running yo")
+    // [] refactor to make callable function
     let inputs = []
     // loop to get elements pushed inside input array as strings
     let number = 0
-    // reset displayResults
-    document.getElementById("displayResults").innerHTML = ""
+    // reset display-results
+    document.getElementById("display-results").innerHTML = ""
     while(document.getElementById(`stats${number}`) != null) {
         let stat = document.getElementById(`stats${number}`).selectedIndex
         let name = document.getElementsByTagName("option")[stat].value
@@ -98,7 +99,7 @@ window.runAlgorithm = function runAlgorithm() {
                 if(inputs[j].slice(-2, -1) == "1") {
                     level = inputs[j].slice(-2)
                 }
-                let lvlAsStr = stat + levels[level]
+                // let lvlAsStr = stat + levels[level]
                 let thisCert = classesJSON[i].Certification
                 let thisStat = ""
                 let thisStatLvl = 0
@@ -115,15 +116,22 @@ window.runAlgorithm = function runAlgorithm() {
                 // [] extract this as a callable function to push results onto page
                 if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
                     console.log("yup")
-                    document.getElementById("displayResults").innerHTML += `<h5>${temp}</h5>`
+                    document.getElementById("display-results").innerHTML += `<h5>${temp}</h5>`
                 }
             }
         }
         // if multiple stats, split it into array and loop
         else {
             let certArray = classesJSON[i].Certification.split(", ")
-            if(classesJSON[i]["Level Seal"] == "Beginner"){
-
+            for(let j = 0; j < certArray.length; j++) {
+                // beginner classes have 'OR' requirements
+                if(classesJSON[i]["Level Seal"] == "Beginner"){
+                    console.log(`${classesJSON[i]["Class Name"]} has multiple stats and is beginner class. Function still working in progress`)
+                }
+                // non beginner classes have 'AND' requirements
+                else {
+                    console.log(`${classesJSON[i]["Class Name"]} has multiple stats and is not a beginner class. This function still in progress`)
+                }
             }
         }
     }
@@ -134,7 +142,7 @@ window.runAlgorithm = function runAlgorithm() {
 window.showClass = function showClass() {
     let selected = document.getElementById("class-names").selectedIndex;
     let idNum = document.getElementsByTagName("option")[selected].value
-    let displayClass = document.getElementById("displayClass")
+    let displayClass = document.getElementById("display-class")
     let thisClass = classesJSON[idNum]
     displayClass.innerHTML = "<h5>Class Name:</h5>"
     displayClass.innerHTML += `<p>${thisClass["Class Name"]}</p>`
@@ -153,6 +161,9 @@ window.showClass = function showClass() {
     
     displayClass.innerHTML += "<h5>Mastery Abilities:</h5>"
     displayClass.innerHTML += `<p>${thisClass["Mastery Abilities"]}</p>`
+
+    displayClass.innerHTML += "<h5>Can Use Magic:</h5>"
+    displayClass.innerHTML += `<p>${thisClass["Magic"]}</p>`
     
     displayClass.innerHTML += "<h5>Specific:</h5>"
     displayClass.innerHTML += `<p>${thisClass["Specific"]}</p>`

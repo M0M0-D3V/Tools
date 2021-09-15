@@ -6,15 +6,17 @@ const classesJSON = [
       "Proficiency": "Axe +1, Bow +1, Brawl +1",
       "Abilities": "",
       "Mastery Abilities": "Shove, Strength + 2",
+      "Magic": "No",
       "Specific": "",
     },
     {
       "Class Name": "Monk",
-      "Certification": "Reason D, or Faith D, Can use magic",
+      "Certification": "Reason D, or Faith D",
       "Level Seal": "Beginner",
       "Proficiency": "Faith +1, Reason +1",
       "Abilities": "",
       "Mastery Abilities": "Draw Back, Magic +2",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -24,6 +26,7 @@ const classesJSON = [
       "Proficiency": "Sword +1",
       "Abilities": "",
       "Mastery Abilities": "Speed +2, Swap",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -33,6 +36,7 @@ const classesJSON = [
       "Proficiency": "Lance +1",
       "Abilities": "",
       "Mastery Abilities": "Defense +2, Reposition",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -42,6 +46,7 @@ const classesJSON = [
       "Proficiency": "Bow +2, Sword +1",
       "Abilities": "Bowrange +1",
       "Mastery Abilities": "Hit +20",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -51,6 +56,7 @@ const classesJSON = [
       "Proficiency": "Axe +2, Hvy Armor +2, Lance +1",
       "Abilities": "",
       "Mastery Abilities": "Armored Blow",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -60,6 +66,7 @@ const classesJSON = [
       "Proficiency": "Axe +1, Brawl +2",
       "Abilities": "Unarmed Combat",
       "Mastery Abilities": "Unarmed Combat",
+      "Magic": "No",
       "Specific": "Male only",
     },
     {
@@ -69,6 +76,7 @@ const classesJSON = [
       "Proficiency": "Axe +2, Brawl +1",
       "Abilities": "",
       "Mastery Abilities": "Death Blow",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -78,24 +86,27 @@ const classesJSON = [
       "Proficiency": "Lance +2, Riding +2, Sword +1",
       "Abilities": "Canto",
       "Mastery Abilities": "Desperation",
+      "Magic": "No",
       "Specific": "",
     },
     {
       "Class Name": "Dark Mage",
-      "Certification": "Reason C, Dark Seal, Can use magic",
+      "Certification": "Reason C, Dark Seal",
       "Level Seal": "Intermediate",
       "Proficiency": "Faith +1, Reason +2",
       "Abilities": "Heartseeker, Miasma",
       "Mastery Abilities": "Poison Strike",
+      "Magic": "Yes",
       "Specific": "Male only",
     },
     {
       "Class Name": "Mage",
-      "Certification": "Reason C, Can use magic",
+      "Certification": "Reason C",
       "Level Seal": "Intermediate",
       "Proficiency": "Faith +1, Reason +2",
       "Abilities": "Fire",
       "Mastery Abilities": "Fiendish Blow",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -105,6 +116,7 @@ const classesJSON = [
       "Proficiency": "Axe +1, Sword +2",
       "Abilities": "",
       "Mastery Abilities": "Vantage",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -114,15 +126,17 @@ const classesJSON = [
       "Proficiency": "Flying +2, Lance +2, Sword +1",
       "Abilities": "Avo +10, Canto",
       "Mastery Abilities": "Darting Blow, Triangle Attack",
+      "Magic": "No",
       "Specific": "Female only",
     },
     {
       "Class Name": "Priest",
-      "Certification": "Faith C, Can use magic",
+      "Certification": "Faith C",
       "Level Seal": "Intermediate",
       "Proficiency": "Faith +2, Reason +1",
       "Abilities": "Heal, White Magic Heal +5",
       "Mastery Abilities": "Miracle",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -132,6 +146,7 @@ const classesJSON = [
       "Proficiency": "Bow +1, Sword +2",
       "Abilities": "Locktouch, Steal",
       "Mastery Abilities": "Steal",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -141,15 +156,17 @@ const classesJSON = [
       "Proficiency": "Bow +3, Lance +3, Riding +3",
       "Abilities": "Bowfaire, Bowrange +2, Canto",
       "Mastery Abilities": "Defiant Spd",
+      "Magic": "No",
       "Specific": "",
     },
     {
       "Class Name": "Dark Knight",
-      "Certification": "Lance C, Reason B+, Riding A, Can use magic",
+      "Certification": "Lance C, Reason B+, Riding A",
       "Level Seal": "Master",
       "Proficiency": "Lance +3, Reason +3, Riding +3",
       "Abilities": "Black Tomefaire, Canto, Dark Tomefaire",
       "Mastery Abilities": "Seal Resistance",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -159,6 +176,7 @@ const classesJSON = [
       "Proficiency": "Flying +3, Lance +3, Sword +3",
       "Abilities": "Avo +10, Canto, Lancefaire",
       "Mastery Abilities": "Defiant Avo",
+      "Magic": "No",
       "Specific": "Female only",
     },
     {
@@ -168,33 +186,37 @@ const classesJSON = [
       "Proficiency": "Axe +3, Hvy Armor +3, Lance +3",
       "Abilities": "Axefaire, Canto, Lancefaire",
       "Mastery Abilities": "Defiant Def",
+      "Magic": "No",
       "Specific": "",
     },
     {
       "Class Name": "Gremory",
-      "Certification": "Reason A, Faith A, Can use magic",
+      "Certification": "Reason A, Faith A",
       "Level Seal": "Master",
       "Proficiency": "Faith +3, Reason +3",
       "Abilities": "Black Magic Uses x2, Dark Magic Uses x2, White Magic Uses x2",
       "Mastery Abilities": "Defiant Mag",
+      "Magic": "Yes",
       "Specific": "Female only",
     },
     {
       "Class Name": "Holy Knight",
-      "Certification": "Lance C, Faith B+, Riding A, Can use magic",
+      "Certification": "Lance C, Faith B+, Riding A",
       "Level Seal": "Master",
       "Proficiency": "Faith +3, Lance +3, Riding +3",
       "Abilities": "Canto, Terrain Resistance, White Tomefaire",
       "Mastery Abilities": "Defiant Res",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
       "Class Name": "Mortal Savant",
-      "Certification": "Sword A, Reason B+, Can use magic",
+      "Certification": "Sword A, Reason B+",
       "Level Seal": "Master",
       "Proficiency": "Reason +3, Sword +3",
       "Abilities": "Black Tomefaire, Swordfaire",
       "Mastery Abilities": "Warding Blow",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -204,6 +226,7 @@ const classesJSON = [
       "Proficiency": "Axe +3, Brawl +3",
       "Abilities": "Axefaire, Crit +20, Fistfaire",
       "Mastery Abilities": "Quick Riposte, War Master's Strike",
+      "Magic": "No",
       "Specific": "Male only",
     },
     {
@@ -213,6 +236,7 @@ const classesJSON = [
       "Proficiency": "Axe +3, Flying +3, Lance +3",
       "Abilities": "Avo +10, Axefaire, Canto",
       "Mastery Abilities": "Defiant Crit",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -222,6 +246,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Axe +3, Hvy Armor +3",
       "Abilities": "Axefaire, Charm",
       "Mastery Abilities": "Pomp & Circumstance",
+      "Magic": "No",
       "Specific": "Edelgard only",
     },
     {
@@ -231,6 +256,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Bow +3, Flying +3",
       "Abilities": "Bowfaire, Canto, Charm",
       "Mastery Abilities": "Wind God",
+      "Magic": "No",
       "Specific": "Claude only",
     },
     {
@@ -240,6 +266,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Axe +3, Hvy Armor +3",
       "Abilities": "Axefaire, Charm",
       "Mastery Abilities": "Flickering Flower",
+      "Magic": "No",
       "Specific": "Edelgard only",
     },
     {
@@ -249,6 +276,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Lance +3, Sword +3",
       "Abilities": "Charm, Lancefaire",
       "Mastery Abilities": "Paraselene",
+      "Magic": "No",
       "Specific": "Dimitri only",
     },
     {
@@ -258,6 +286,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Lance +3, Sword +3",
       "Abilities": "Charm, Lancefaire",
       "Mastery Abilities": "Pomp & Circumstance",
+      "Magic": "No",
       "Specific": "Dimitri only",
     },
     {
@@ -267,6 +296,7 @@ const classesJSON = [
       "Proficiency": "Authority +2, Lance +1, Sword +2",
       "Abilities": "Charm",
       "Mastery Abilities": "Resistance +2, Subdue",
+      "Magic": "No",
       "Specific": "House Leaders only",
     },
     {
@@ -276,6 +306,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Bow +3, Flying +3",
       "Abilities": "Bowfaire, Canto, Charm",
       "Mastery Abilities": "Pomp & Circumstance",
+      "Magic": "No",
       "Specific": "Claude only",
     },
     {
@@ -285,6 +316,7 @@ const classesJSON = [
       "Proficiency": "",
       "Abilities": "",
       "Mastery Abilities": "HP +5",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -294,24 +326,27 @@ const classesJSON = [
       "Proficiency": "",
       "Abilities": "",
       "Mastery Abilities": "HP +5",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
       "Class Name": "Dancer",
-      "Certification": "Win the White Heron Cup, Can use magic",
+      "Certification": "Win the White Heron Cup",
       "Level Seal": "Unique",
       "Proficiency": "Authority +2, Sword +2",
       "Abilities": "Dance",
       "Mastery Abilities": "Special Dance",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
       "Class Name": "Enlightened One",
-      "Certification": "Start of Chapter 11, Can use magic",
+      "Certification": "Start of Chapter 11",
       "Level Seal": "Unique",
       "Proficiency": "Authority +3, Brawl +2, Faith +3, Sword +3",
       "Abilities": "Swordfaire, Terrain Resistance",
       "Mastery Abilities": "Sacred Power",
+      "Magic": "Yes",
       "Specific": "Byleth only",
     },
     {
@@ -321,6 +356,7 @@ const classesJSON = [
       "Proficiency": "Authority +3, Faith +3, Sword +3",
       "Abilities": "Charm, Commander, Terrain Resistance",
       "Mastery Abilities": "Sacred Power",
+      "Magic": "Yes",
       "Specific": "Rhea only",
     },
     {
@@ -330,6 +366,7 @@ const classesJSON = [
       "Proficiency": "Lance +3, Reason +3, Riding +3",
       "Abilities": "Canto, Lancefaire",
       "Mastery Abilities": "Counterattack",
+      "Magic": "Yes",
       "Specific": "Death Knight only",
     },
     {
@@ -339,6 +376,7 @@ const classesJSON = [
       "Proficiency": "Sword +3",
       "Abilities": "Sword Critical +10, Swordfaire",
       "Mastery Abilities": "Astra",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -348,6 +386,7 @@ const classesJSON = [
       "Proficiency": "Axe +2, Sword +3",
       "Abilities": "Swordfaire, Vantage",
       "Mastery Abilities": "Defiant Str",
+      "Magic": "No",
       "Specific": "Male only",
     },
     {
@@ -357,6 +396,7 @@ const classesJSON = [
       "Proficiency": "Bow +2, Sword +3",
       "Abilities": "Locktouch, Stealth, Swordfaire",
       "Mastery Abilities": "Assassinate, Lethality",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -366,6 +406,7 @@ const classesJSON = [
       "Proficiency": "Lance +3, Riding +3, Sword +2",
       "Abilities": "Canto, Lancefaire, Terrain Resistance",
       "Mastery Abilities": "Aegis",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -375,6 +416,7 @@ const classesJSON = [
       "Proficiency": "Axe +3",
       "Abilities": "Axe Critical +10, Axefaire",
       "Mastery Abilities": "Wrath",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -384,6 +426,7 @@ const classesJSON = [
       "Proficiency": "Axe +3, Hvy Armor +3, Lance +2",
       "Abilities": "Axefaire, Weight -5",
       "Mastery Abilities": "Pavise",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -393,6 +436,7 @@ const classesJSON = [
       "Proficiency": "Axe +3, Flying +3, Lance +2",
       "Abilities": "Axefaire, Canto",
       "Mastery Abilities": "Seal Defense",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -402,6 +446,7 @@ const classesJSON = [
       "Proficiency": "Bow +3",
       "Abilities": "Bowfaire, Bowrange +1",
       "Mastery Abilities": "Hunter's Volley",
+      "Magic": "No",
       "Specific": "",
     },
     {
@@ -411,15 +456,17 @@ const classesJSON = [
       "Proficiency": "Brawl +3",
       "Abilities": "Fistfaire, Unarmed Combat",
       "Mastery Abilities": "Fierce Iron Fist, Tomebreaker",
+      "Magic": "No",
       "Specific": "Male only",
     },
     {
       "Class Name": "Warlock",
-      "Certification": "Reason A, Can use magic",
+      "Certification": "Reason A",
       "Level Seal": "Advanced",
       "Proficiency": "Faith +2, Reason +3",
       "Abilities": "Black Magic Uses x2, Black Tomefaire",
       "Mastery Abilities": "Bowbreaker",
+      "Magic": "Yes",
       "Specific": "",
     },
     {
@@ -429,15 +476,17 @@ const classesJSON = [
       "Proficiency": "Faith +2, Reason +3",
       "Abilities": "Fiendish Blow, Heartseeker, Miasma",
       "Mastery Abilities": "Lifetaker",
+      "Magic": "No",
       "Specific": "Male only, Dark Seal",
     },
     {
       "Class Name": "Bishop",
-      "Certification": "Faith A, Can use magic",
+      "Certification": "Faith A",
       "Level Seal": "Advanced",
       "Proficiency": "Faith +3, Reason +2",
       "Abilities": "Terrain Resistance, White Magic Heal +10, White Magic Uses x2",
       "Mastery Abilities": "Renewal",
+      "Magic": "Yes",
       "Specific": "",
     }
 ]

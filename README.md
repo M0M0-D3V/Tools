@@ -27,3 +27,5 @@
 - Continue algorithm, finished single stat with multi input comparisons
 ## Day 10 - Sep 13, 2021 - Monday
 - Start the other part of algorithm where it searches for stats in classes that require multiple input matches
+## Day 11 - Sep 14, 2021 - Tuesday
+- Rewrite some attributes in the classesJSON and rework some logic

@@ -57,7 +57,7 @@ select option::selection {
     color: white;
     padding: 5px 15px;
 }
-#displayClass, #displayResults {
+#display-class, #display-results {
     border: 0.5px solid white;
     background-color: #101944;
     padding: 20px;
@@ -67,10 +67,10 @@ select option::selection {
     margin-left: 50px;
     margin-top: 10px;
 }
-#displayClass h5, #displayResults h5 {
+#display-class h5, #display-results h5 {
     color: #93539c;
 }
-#displayClass p, #displayResults p {
+#display-class p, #display-results p {
     margin-left: 25px;
     text-align: right;
     color: #e4b0ae;
@@ -78,7 +78,7 @@ select option::selection {
 .stats, .levels {
     margin-left: 5px;
 }
-#daButton {
+#da-button {
     background-color: #916aae;
     color: white;
     padding: 8px;
