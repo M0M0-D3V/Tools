@@ -123,9 +123,9 @@ window.runAlgorithm = function runAlgorithm() {
         // if multiple stats, split it into array and loop
         else {
             let certArray = classesJSON[i].Certification.split(", ")
-            for(let j = 0; j < certArray.length; j++) {
+            certloop: for(let j = 0; j < certArray.length; j++) {
                 // 3rd loop to now compare certArray and inputs
-                for(let k = 0; k < inputs.length; k++) {
+                inputloop: for(let k = 0; k < inputs.length; k++) {
                     // brute force, copying above for loop straight in...
                     // [] figure out how to refactor later
                     let stat = inputs[k].slice(0, -1)
@@ -148,11 +148,11 @@ window.runAlgorithm = function runAlgorithm() {
                     }
                     // beginner classes have 'OR' requirements
                     if(classesJSON[i]["Level Seal"] == "Beginner"){
-                        console.log(`+++ ${classesJSON[i]["Class Name"]} has multiple stats and is beginner class.`)
                         // [] extract this as a callable function to push results onto page
                         if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
                             console.log("yup")
                             document.getElementById("display-results").innerHTML += `<h5>${temp}</h5>`
+                            break certloop
                         }
                 
                     }
@@ -160,6 +160,10 @@ window.runAlgorithm = function runAlgorithm() {
                     else {
                         console.log(`xxx ${classesJSON[i]["Class Name"]} has multiple stats and is not a beginner class.`)
                         // temp array to push in matching stats and c
+                        // check if all stats in certArray 
+                        if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
+                            let tempArray = []
+                        }
                     }
                 }
             }
