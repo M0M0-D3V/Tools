@@ -29,3 +29,5 @@
 - Start the other part of algorithm where it searches for stats in classes that require multiple input matches
 ## Day 11 - Sep 14, 2021 - Tuesday
 - Rewrite some attributes in the classesJSON and rework some logic
+## Day 12 - Sep 15, 2021 - Wednesday
+- Fix the algorithm to break when matching for "Beginner Class"
