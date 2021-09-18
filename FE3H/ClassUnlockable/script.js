@@ -48,7 +48,6 @@ for(let i = 0; i < levels.length; i++) {
 // END POPULATE
 // ****************************************************************
 
-
 // will add addional drop downs to select another stat and level
 window.work = function work() {
     let number = 0
