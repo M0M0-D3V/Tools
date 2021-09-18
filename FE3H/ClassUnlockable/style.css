@@ -84,3 +84,7 @@ select option::selection {
     padding: 8px;
     border-radius: 12px;
 }
+.beginner span, .intermediate span{
+    color: white;
+    font-weight: 300;
+}

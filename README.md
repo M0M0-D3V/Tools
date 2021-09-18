@@ -31,3 +31,7 @@
 - Rewrite some attributes in the classesJSON and rework some logic
 ## Day 12 - Sep 15, 2021 - Wednesday
 - Fix the algorithm to break when matching for "Beginner Class"
+## Day 13 - Sep 16, 2021 - Thursday
+- Start recursive procedure for matching all certs and stats
+## Day 14 - Sep 17, 2021 - Friday
+- Found a different way to match all certs and stats and Finished 

@@ -17,6 +17,7 @@ const levelIndex = {
 
 console.log("you rang boss?")
 
+// ****************************************************************
 // POPULATE THE SELECT OPTIONS WITH CLASS NAMES
 let selectNames = document.getElementById("class-names")
 let classesLength = classesJSON.length
@@ -45,6 +46,8 @@ for(let i = 0; i < levels.length; i++) {
     selectLevels.appendChild(levelOption)
 }
 // END POPULATE
+// ****************************************************************
+
 
 // will add addional drop downs to select another stat and level
 window.work = function work() {
@@ -116,13 +119,14 @@ window.runAlgorithm = function runAlgorithm() {
                 // [] extract this as a callable function to push results onto page
                 if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
                     console.log("yup")
-                    document.getElementById("display-results").innerHTML += `<h5>${temp}</h5>`
+                    document.getElementById("display-results").innerHTML += `<h5 class="single-stat">${temp}</h5>`
                 }
             }
         }
         // if multiple stats, split it into array and loop
         else {
             let certArray = classesJSON[i].Certification.split(", ")
+            let match = 0
             certloop: for(let j = 0; j < certArray.length; j++) {
                 // 3rd loop to now compare certArray and inputs
                 inputloop: for(let k = 0; k < inputs.length; k++) {
@@ -151,22 +155,23 @@ window.runAlgorithm = function runAlgorithm() {
                         // [] extract this as a callable function to push results onto page
                         if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
                             console.log("yup")
-                            document.getElementById("display-results").innerHTML += `<h5>${temp}</h5>`
+                            document.getElementById("display-results").innerHTML += `<h5 class="beginner">${temp} <span>(need just 1)</span></h5>`
                             break certloop
                         }
-                
                     }
                     // non beginner classes have 'AND' requirements
                     else {
-                        console.log(`xxx ${classesJSON[i]["Class Name"]} has multiple stats and is not a beginner class.`)
-                        // temp array to push in matching stats and c
-                        // check if all stats in certArray 
                         if((stat.slice(0, -1) == thisStat || stat.slice(0, -2) == thisStat) && level >= thisStatLvl) {
-                            let tempArray = []
+                            match++
                         }
                     }
                 }
+                if(match == certArray.length) {
+                    console.log(`############# found match! ${classesJSON[i]["Class Name"]}`)
+                    document.getElementById("display-results").innerHTML += `<h5 class="intermediate">${temp} <span>(need all)</span></h5>`
+                }
             }
+            match = 0
         }
     }
 }
