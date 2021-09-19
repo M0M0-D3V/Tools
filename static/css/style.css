@@ -5,53 +5,67 @@
     /* font-family: 'Cutive Mono', monospace; */
     font-family: 'Fira Code', monospace;
 }
-
-body {
+#background {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
     line-height: 24pt;
-    background-color: lightslategray;
+    background-color: #181b46;
+}
+#background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../img/background2.jpg");
+    background-size: cover;
+    opacity: 0.7;
 }
 header {
     background-color: black;
     height: 200px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid lightgray;
 }
 main {
     height: 100%;
     width: 75%;
     margin: 0 auto;
-    border-left:2px solid grey;
-    border-right:2px solid grey;
+    border-left:2px solid lightgray;
+    border-right:2px solid lightgray;
     box-shadow: 2px 2px aquamarine;
     border-radius: 20px;
-    background-color: whitesmoke;
+    background-color: #02032a;
     display: flex;
     flex: 1;
     justify-content: space-around;
+    opacity: 0.85;
+    z-index: 1;
+    color: white;
 }
-main .content-area {
+main #content-area {
     flex: 1;
     border-right: 1px solid lightgray;
-    border: inset gray;
+    border: inset lightgray;
     border-radius: 20px 0 0 20px;
 }
-main .side-area {
+main #side-area {
     flex: 1;
     background-color: cornflowerblue;
-    border: inset gray;
+    border: inset lightgray;
     border-radius: 0 20px 20px 0;
 }
 footer {
     background-color: black;
     min-height: 50px;
-    border-top: 2px solid gray;
+    border-top: 2px solid lightgray;
     margin-top: auto;
     padding: 10px 15%;
     border-radius: 15px 15px 0 0;
     display: flex;
+    opacity: 0.9;
     justify-content: space-around;
 }
 footer h3, footer h5 {
@@ -83,6 +97,9 @@ footer span {
 .p-50 {
     padding: 50px;
 }
+a, a:active {
+    color: cyan;
+}
 a:visited {
     color: cyan;
 }
@@ -96,4 +113,9 @@ a:hover {
     background-color: black;
     color: lime;
     padding: 20px;
+    /* border-style: outset; */
+    border-top: 10px double cyan;
+    border-right: 3px outset yellow;
+    border-bottom: 3px outset lime;
+    border-left: 3px outset magenta;
 }
