@@ -11,7 +11,14 @@ for(let i = 0; i < numberOfTools; i++) {
     let thisTool = toolsJSON[i]
     let title = document.createElement("h3")
     title.setAttribute("onmouseover", `showTool(${i})`)
-    title.innerHTML = `Day ${thisTool["Days"]} - <a href="${thisTool["Link"]}" target="_blank" rel="noopener noreferrer">${thisTool["Tool Name"]}</a>`
+    let link = ""
+    if(thisTool["Link"] == "#") {
+        link = `<a href="${thisTool["Link"]}">`
+    }
+    else {
+        link = `<a href="${thisTool["Link"]}" target="_blank" rel="noopener noreferrer">`
+    }
+    title.innerHTML = `Day ${thisTool["Days"]} - ${link}${thisTool["Tool Name"]}</a>`
     contentArea.append(title)
 }
 
