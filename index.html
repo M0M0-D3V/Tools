@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,28 +16,32 @@
   <body>
     <header id="banner"></header>
     <main>
-      <h3>
-        Day 1 -
-        <a href="RatioCalculator/index.html">Ratio Calculator</a>
-      </h3>
-
-      <h3>
-        Day 2, 3 -
-        <a href="MEL_Scripts/RenameTextInFile/scriptfull.py"
-          >Batch Object Renamer for Maya Autodesk</a
-        >
-      </h3>
-      <h3>
-        Day 4 - 14 -
-        <a href="FE3H/ClassUnlockable/index.html"
-          >Fire Emblem 3 Houses - Class isUnlockable?</a
-        >
-      </h3>
-      <h3>
-        Day 5 -
-        <a href="CSVtoJSON/index.html">CSV Visualizer</a>
-      </h3>
-      <h3>Day 15 - Designed this landing page</h3>
+      <div class="content-area p-50">
+        <h3 onmouseover="showD1()">
+          Day 1 -
+          <a href="RatioCalculator/index.html">Ratio Calculator</a>
+        </h3>
+        <h3 onmouseover="showD2to3()">
+          Day 2, 3 -
+          <a href="MEL_Scripts/RenameTextInFile/scriptfull.py"
+            >Batch Object Renamer for Maya Autodesk</a
+          >
+        </h3>
+        <h3 onmouseover="showD4to14()">
+          Day 4 - 14 -
+          <a href="FE3H/ClassUnlockable/index.html"
+            >Fire Emblem 3 Houses - Class Matcher</a
+          >
+        </h3>
+        <h3 onmouseover="showD5()">
+          Day 5 -
+          <a href="CSVtoJSON/index.html">CSV Visualizer</a>
+        </h3>
+        <h3 onmouseover="showD15()">Day 15 - Designed this landing page</h3>
+      </div>
+      <div class="side-area p-50">
+        <div id="info-blurb"></div>
+      </div>
     </main>
     <footer>
       <h3>Welcome to D3V-M0! 🤖</h3>
@@ -47,4 +51,5 @@
       </h5>
     </footer>
   </body>
+  <script type="module" src="./static/js/script.js" defer></script>
 </html>

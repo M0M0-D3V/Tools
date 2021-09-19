@@ -23,12 +23,26 @@ main {
     height: 100%;
     width: 75%;
     margin: 0 auto;
-    padding: 50px 50px;
     border-left:2px solid grey;
     border-right:2px solid grey;
     box-shadow: 2px 2px aquamarine;
     border-radius: 20px;
     background-color: whitesmoke;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+main .content-area {
+    flex: 1;
+    border-right: 1px solid lightgray;
+    border: inset gray;
+    border-radius: 20px 0 0 20px;
+}
+main .side-area {
+    flex: 1;
+    background-color: cornflowerblue;
+    border: inset gray;
+    border-radius: 0 20px 20px 0;
 }
 footer {
     background-color: black;
@@ -49,7 +63,7 @@ footer span {
 }
 
 #banner {
-    background-image: url("./img/banner.jpg");
+    background-image: url("../img/banner.jpg");
     background-color: black;
     background-position: 50% 50%;
     background-size: cover;
@@ -65,4 +79,21 @@ footer span {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
+}
+.p-50 {
+    padding: 50px;
+}
+a:visited {
+    color: cyan;
+}
+a:hover {
+    color: lime;
+    text-decoration: none;
+    font-size: 100.5%;
+    transition: 0.3s;
+}
+.info {
+    background-color: black;
+    color: lime;
+    padding: 20px;
 }
