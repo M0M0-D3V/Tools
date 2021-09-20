@@ -1,12 +1,12 @@
 const decisionsJSON = [
     // {
-    //     "Type": "What to eat"
+    //     "Option": "What to eat"
     // },
     // {
-    //     "Type": "Deciding which task to do first"
+    //     "Option": "Deciding which task to do first"
     // },
     {
-        "Type": "If I should accept a new task",
+        "Option": "If I should accept a new task",
         "Questions": [
             "Do you understand what exactly the task is?",
             "Is there a benefit to doing it?",
@@ -15,7 +15,7 @@ const decisionsJSON = [
         ]
     },
     // {
-    //     "Type": "Should I buy it?"
+    //     "Option": "Should I buy it?"
     // }
 ]
 

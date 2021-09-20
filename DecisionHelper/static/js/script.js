@@ -9,7 +9,7 @@ let decisionsLength = decisionsJSON.length
 for (let i = 0; i < decisionsLength; i++) {
     let newOption = document.createElement("option")
     newOption.setAttribute("value", i)
-    newOption.innerHTML = decisionsJSON[i]["Type"]
+    newOption.innerHTML = decisionsJSON[i]["Option"]
     selectDecision.appendChild(newOption)
 }
 // *************************************************
