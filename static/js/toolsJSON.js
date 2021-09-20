@@ -29,6 +29,12 @@ const toolsJSON = [
         "Link": "#",
         "Days": "15",
     },
+    {
+        "Tool Name": "Decision Helper",
+        "Description": "A tool that helps narrow down what task to do by asking a series of questions. Made with HTML/CSS/Javascript",
+        "Link": "DecisionHelper/index.html",
+        "Days": "16",
+    },
 ]
 
 export { toolsJSON }

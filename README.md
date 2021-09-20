@@ -37,3 +37,5 @@
 - Found a different way to match all certs and stats and Finished
 ## Day 15 - Sep 18, 2021 - Saturday
 - Took a relaxing day to design this landing page
+## Day 16 - Sep 19, 2021 - Sunday
+- Start new tool to help make decisions, fleshing out structure of questions
