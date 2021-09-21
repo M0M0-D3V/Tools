@@ -1,10 +1,10 @@
 const decisionsJSON = [
-    // {
-    //     "Option": "What to eat"
-    // },
-    // {
-    //     "Option": "Deciding which task to do first"
-    // },
+    {
+        "Option": "What to eat"
+    },
+    {
+        "Option": "Deciding which task to do first"
+    },
     {
         "Option": "If I should accept a new task",
         "Questions": [
@@ -14,9 +14,9 @@ const decisionsJSON = [
             "Do you have time for it?" 
         ]
     },
-    // {
-    //     "Option": "Should I buy it?"
-    // }
+    {
+        "Option": "Should I buy it?"
+    }
 ]
 
 export { decisionsJSON }
