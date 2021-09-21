@@ -169,10 +169,10 @@ window.runAlgorithm = function runAlgorithm() {
                     console.log(`############# found match! ${classesJSON[i]["Class Name"]}`)
                     document.getElementById("display-results").innerHTML += `<h5 class="intermediate">${temp} <span>(need all)</span></h5>`
                 }
-                else if(match + 1 == certArray.length) {
-                    console.log(`~~~~~~ missing 1 stat ${classesJSON[i]["Class Name"]}`)
-                    document.getElementById("display-results").innerHTML += `<h5 class="intermediate">${temp} <span>(missing 1 stat)</span></h5>`
-                }
+            }
+            if(match + 1 == certArray.length) {
+                console.log(`~~~~~~ missing 1 stat ${classesJSON[i]["Class Name"]}`)
+                document.getElementById("display-results").innerHTML += `<h5 class="intermediate">${temp} <span>(missing 1 stat)</span></h5>`
             }
             match = 0
         }

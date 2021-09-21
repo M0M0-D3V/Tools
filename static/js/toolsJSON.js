@@ -15,7 +15,7 @@ const toolsJSON = [
         "Tool Name": "Fire Emblem 3 Houses - Class Matcher",
         "Description": "This is a tool I made for my personal use as I am playing through a tactical strategy game. The game has various characters to level and to have classes unlocked at a certain skill level. I got tired of looking up screen to screen and decided to make a a button that will match all the available classes to the skills and stats entered. It was a slow process of 10 days and I think it was worth it. Made with HTML/CSS/Javascript",
         "Link": "FE3H/ClassUnlockable/index.html",
-        "Days": "4 - 14",
+        "Days": "4 - 14, 17",
     },
     {
         "Tool Name": "CSV Visualizer",

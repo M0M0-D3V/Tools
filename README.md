@@ -39,3 +39,5 @@
 - Took a relaxing day to design this landing page
 ## Day 16 - Sep 19, 2021 - Sunday
 - Start new tool to help make decisions, fleshing out structure of questions
+## Day 17 - Sep 20, 2021 - Monday
+- Go back to Class Matcher and add a condition to match for classes with one less stat
