@@ -35,6 +35,12 @@ const toolsJSON = [
         "Link": "DecisionHelper/index.html",
         "Days": "16",
     },
+    {
+        "Tool Name": "APIs Pokedex",
+        "Description": "A tool to help me practice recreating the Pokedex and practicing pulling data from API. Made with HTML/CSS/Javascript",
+        "Link": "APIs/Pokemon/index.html",
+        "Days": "18",
+    },
 ]
 
 export { toolsJSON }

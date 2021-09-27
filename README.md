@@ -41,3 +41,5 @@
 - Start new tool to help make decisions, fleshing out structure of questions
 ## Day 17 - Sep 20, 2021 - Monday
 - Go back to Class Matcher and add a condition to match for classes with one less stat
+## Day 18 - Sep 26, 2021 - Sunday
+- Recreated Pokedex to prep for teaching class
