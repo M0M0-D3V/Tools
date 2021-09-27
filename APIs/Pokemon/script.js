@@ -21,12 +21,20 @@ for(let i = 1; i <= 150; i++) {
 }
 
 function show(mon) {
-    console.log(`showing ${mon.name}`)
-    let html_str = ""
-    
+    let html_str = `
+        <h3>${mon.name}</h3>
+        <img src="${mon.sprites.front_default}" alt="${mon.name}" />
+        <h4>height: ${mon.height}</h4>
+        <h4>weight: ${mon.weight}</h4>
+        <h4>types: `
+    for(let i = 0; i < mon.types.length; i++) {
+        console.log(mon.types[i].type.name)
+        html_str += `${mon.types[i].type.name} `
+    }
+    html_str += `</h4>`
+    pokeView.innerHTML = html_str
 }
 
 function stopShow(mon) {
-    console.log(`not showing ${mon.name}`)
     pokeView.innerHTML = ""
 }

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0.5px dotted pink;
+    /* border: 0.5px dotted pink; */
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -35,6 +35,7 @@ main {
 }
 #poke-view {
     flex: 2;
+    color: var(--powder-blue)
 }
 .p-20 {
     padding: 20px;
