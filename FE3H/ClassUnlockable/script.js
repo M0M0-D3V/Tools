@@ -16,7 +16,6 @@ const levelIndex = {
 }
 
 console.log("you rang boss?")
-
 // ****************************************************************
 // POPULATE THE SELECT OPTIONS WITH CLASS NAMES
 let selectNames = document.getElementById("class-names")

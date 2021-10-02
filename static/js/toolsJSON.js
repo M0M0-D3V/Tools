@@ -13,9 +13,9 @@ const toolsJSON = [
     },
     {
         "Tool Name": "Fire Emblem 3 Houses - Class Matcher",
-        "Description": "This is a tool I made for my personal use as I am playing through a tactical strategy game. The game has various characters to level and to have classes unlocked at a certain skill level. I got tired of looking up screen to screen and decided to make a a button that will match all the available classes to the skills and stats entered. It was a slow process of 10 days and I think it was worth it. Made with HTML/CSS/Javascript",
+        "Description": "This is a tool I made for my personal use as I am playing through a tactical strategy game. The game has various characters to level and to have classes unlocked at a certain skill level. I got tired of looking up screen to screen and decided to make a a button that will match all the available classes to the skills and stats entered. It was a slow process of 10 days and I think it was worth it. Made with HTML/CSS/Javascript. Edit: I'm still coming back to continue working on little things during downtime like visuals and considering adding more functionality!",
         "Link": "FE3H/ClassUnlockable/index.html",
-        "Days": "4 - 14, 17",
+        "Days": "4 - 14, 17, 19",
     },
     {
         "Tool Name": "CSV Visualizer",
@@ -31,7 +31,7 @@ const toolsJSON = [
     },
     {
         "Tool Name": "Decision Helper",
-        "Description": "A tool that helps narrow down what task to do by asking a series of questions. Made with HTML/CSS/Javascript",
+        "Description": "A tool that helps narrow down what task to do by asking a series of questions. Currently work in progress using HTML/CSS/Javascript",
         "Link": "DecisionHelper/index.html",
         "Days": "16",
     },

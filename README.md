@@ -43,3 +43,5 @@
 - Go back to Class Matcher and add a condition to match for classes with one less stat
 ## Day 18 - Sep 26, 2021 - Sunday
 - Recreated Pokedex to prep for teaching class
+## Day 19 - Oct 2, 2021 - Saturday
+- Decided today to fix some visuals with CSS on the Class Matcher Tool

@@ -7,40 +7,45 @@
     <title>Fire Emblem - Tool</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex">
     <nav>
         <h3><a href="../../index.html">Back to main page...</a></h3>
     </nav>
-
-    <img src="./img/banner.jpg" id="banner">
-    
-    <h3 class="title">Choose a Class to View</h3>
-    <div id="select-area d-flex">
-        <select id="class-names" name="fe-class" onchange="showClass()">
-            <option value="none" selected disabled hidden>Select a Class</option>
-            <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
-        </select>
-        <div id="display-class"></div>
-    </div>
-    <h3 class="title">Class isUnlockable?</h3>
-    
-    <!-- button to keep adding stat -->
-    <div id="stats-area">
-        <select id="stats0" name="stats0" class="stats">
-            <option value="none" selected disabled hidden>Select Skill</option>
-            <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
-        </select>
-        <select id="level0" name="level0" class="levels">
-            <option value="none" selected disabled hidden>Select Level</option>
-            <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
-        </select>
-        <button class="plus" onclick="work()">
-            <h1>+</h1>
-        </button>
-        <button id="da-button" onclick="runAlgorithm()">Check Classes</button>
-    </div>
-    <div id="display-results"></div>
-
+    <main>
+        <img src="./img/banner.jpg" id="banner">
+        
+        <h3 class="title">Choose a Class to View</h3>
+        <div id="select-area" class="d-flex">
+            <select id="class-names" class="f-1" name="fe-class" onchange="showClass()">
+                <option value="none" selected disabled hidden>Select a Class</option>
+                <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
+            </select>
+            <div id="display-class" class="f-3"></div>
+        </div>
+        <h3 class="title">Class isUnlockable?</h3>
+        
+        <!-- button to keep adding stat -->
+        <div class="d-flex">
+            <div id="stats-area" class="f-1">
+                <div class="d-flex f-wrap">
+                    <select id="stats0" name="stats0" class="stats">
+                        <option value="none" selected disabled hidden>Select Skill</option>
+                        <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
+                    </select>
+                    <select id="level0" name="level0" class="levels">
+                        <option value="none" selected disabled hidden>Select Level</option>
+                        <!-- JS WILL AUTOMATICALLY ADD OPTIONS -->
+                    </select>
+                </div>
+                <input id="plus" onclick="work()" type="submit" value="+">
+                <button id="da-button" onclick="runAlgorithm()">Check Classes</button>
+            </div>
+            <div id="display-results" class="f-3"></div>
+        </div>
+    </main>
+    <footer>
+        Coded by Monica Hong
+    </footer>
 </body>
 <script type="module" src="script.js" defer></script>
 </html>

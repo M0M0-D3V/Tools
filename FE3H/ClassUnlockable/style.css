@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     border: 0.5 px dotted pink;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 a:visited {
     color: lightpink;
@@ -12,9 +13,41 @@ a:hover {
 }
 body {
     background-color: #2d3e76;
-    width: 80%;
-    margin: 50px auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    height: 100vh;
+    color: white;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 1;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image:url("./img/banner.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+nav {
+    margin-bottom: 10px;
+    background-color: black;
+    opacity: 0.3;
+}
+main {
+    max-width: 970px;
+    margin: 0 auto;
+}
+footer {
+    min-height: 50px;
+    border-top: 2px solid white;
+    margin-top: auto;
+    border-radius: 15px 15px 0 0;
+}
+nav, footer {
+    padding: 20px;
 }
 #banner {
     height: 300px;
@@ -32,30 +65,21 @@ body {
 select {
     line-height: 16px;
     height: 25px;
+    margin-bottom: 5px;
 }
 select option::selection {
     background-color: darkseagreen;
 }
-.d-flex {
-    display: flex;
-}
-#select-area {
-    align-items: flex-start;
-    flex: 2;
-    margin: 20px;
-}
-.plus {
-    border: 0.5px solid gray;
+input#plus {
+    border: 1px solid gray;
     background-color: #101944;
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
-}
-.plus h1 {
-    vertical-align: middle;
-    text-align: center;
     color: white;
-    padding: 5px 15px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14pt;
 }
 #display-class, #display-results {
     border: 0.5px solid white;
@@ -63,9 +87,8 @@ select option::selection {
     padding: 20px;
     line-height: 16pt;
     border-radius: 5px;
-    height: fit-content;
-    margin-left: 50px;
-    margin-top: 10px;
+    max-height: 25vh;
+    overflow-y:scroll;
 }
 #display-class h5, #display-results h5 {
     color: #93539c;
@@ -87,4 +110,20 @@ select option::selection {
 .beginner span, .intermediate span{
     color: white;
     font-weight: 300;
+}
+/* TOOL Classes */
+.d-flex {
+    display: flex;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.f-1 {
+    flex: 1;
+}
+.f-2 {
+    flex: 2;
+}
+.f-3 {
+    flex: 3;
 }
