@@ -45,3 +45,4 @@
 - Recreated Pokedex to prep for teaching class
 ## Day 19 - Oct 2, 2021 - Saturday
 - Decided today to fix some visuals with CSS on the Class Matcher Tool
+- Followed a tutorial to build Web API in ASP.NET to refresh knowledge of C#/.NET

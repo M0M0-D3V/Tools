@@ -41,6 +41,12 @@ const toolsJSON = [
         "Link": "APIs/Pokemon/index.html",
         "Days": "18",
     },
+    {
+        "Tool Name": "Pizza API",
+        "Description": "Followed a tutorial to build out a web API for storing various pizzas in memory-cache. Wanted to touch up on API creating from scratch using C#/.NET. Will consider adding a database to it in the future for another one-off project.",
+        "Link": "#",
+        "Days": "19",
+    },
 ]
 
 export { toolsJSON }
