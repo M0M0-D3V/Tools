@@ -46,3 +46,5 @@
 ## Day 19 - Oct 2, 2021 - Saturday
 - Decided today to fix some visuals with CSS on the Class Matcher Tool
 - Followed a tutorial to build Web API in ASP.NET to refresh knowledge of C#/.NET
+## Day 20 - Oct 9, 2021 - Saturday
+- Went over a tutorial about Firebase to learn how to build using a Back-End-as-a-Service for future reference on tying together a front end project

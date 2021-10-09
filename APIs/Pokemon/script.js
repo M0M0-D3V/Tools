@@ -6,11 +6,12 @@ for(let i = 1; i <= 150; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then((response) => response.json())
     .then((data) => {
-        console.log(data);
+        // console.log(data);
         let pokemon = document.createElement("img");
         let pokemonImgUrl = data.sprites.front_default;
         pokemon.src = pokemonImgUrl;
         pokemon.addEventListener("mouseover", function() {show(data)})
+        // pokemon.addEventListener("mouseover", show())
         pokemon.addEventListener("mouseout", function() {stopShow(data)})
         pokeGallery.appendChild(pokemon);
     })
@@ -21,14 +22,20 @@ for(let i = 1; i <= 150; i++) {
 }
 
 function show(mon) {
+    console.log(mon.name)
+    // string interpolation or template literal
     let html_str = `
         <h3>${mon.name}</h3>
         <img src="${mon.sprites.front_default}" alt="${mon.name}" />
         <h4>height: ${mon.height}</h4>
         <h4>weight: ${mon.weight}</h4>
         <h4>types: `
+    let other_str = "${mon.name}"
+    let another_str = '${mon.name}'
+    console.log("other_str", other_str)
+    console.log("another_str", another_str)
     for(let i = 0; i < mon.types.length; i++) {
-        console.log(mon.types[i].type.name)
+        // console.log(mon.types[i].type.name)
         html_str += `${mon.types[i].type.name} `
     }
     html_str += `</h4>`

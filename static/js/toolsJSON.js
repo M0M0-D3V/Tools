@@ -47,6 +47,12 @@ const toolsJSON = [
         "Link": "#",
         "Days": "19",
     },
+    {
+        "Tool Name": "FriendlyChat",
+        "Description": "Followed a tutorial to learn and build a chat web app using firebase. Javascript heavy as well as reading HTML/CSS",
+        "Link": "https://friendlychat-42985.web.app/",
+        "Days": "20",
+    },
 ]
 
 export { toolsJSON }

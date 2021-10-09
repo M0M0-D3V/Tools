@@ -12,27 +12,27 @@
         <h3><a href="../index.html">Back to main page...</a></h3>
     </nav>
     <h1>Calculate Ratio</h1>
-    <section>
         <!-- <div class="container mid" onchange="calculate()"> -->
-        <div class="container mid">
-            <div class="equation">
-                <div class="fraction mid">
-                    <!-- <div class="input-box"></div> -->
-                    <input type="number" class="input-box" id="numer1" >
-                    <div class="line"></div>
-                    <input type="number" class="input-box" id="denom1" >
-                </div>
-                <h1>=</h1>
-                <div class="fraction mid">
-                    <input type="number" class="input-box" id="numer2" >
-                    <div class="line"></div>
-                    <input type="number" class="input-box" id="denom2" >
-                </div>
+    <div class="container mid">
+        <div class="equation">
+            <div class="fraction mid">
+                <!-- <div class="input-box"></div> -->
+                <input type="number" class="input-box" id="numer1" >
+                <div class="line"></div>
+                <input type="number" class="input-box" id="denom1" >
             </div>
-            <div class="relative"><button class="calculate" onclick="calculate()">Calculate</button></div>
+            <h1>=</h1>
+            <div class="fraction mid">
+                <input type="number" class="input-box" id="numer2" >
+                <div class="line"></div>
+                <input type="number" class="input-box" id="denom2" >
+            </div>
         </div>
-        <p id="message"></p>
-    </section>
+        <div class="relative">
+            <button class="calculate" onclick="calculate()">Calculate</button>
+        </div>
+    </div>
+    <p id="message"></p>
 </body>
 <!-- <script
 src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
