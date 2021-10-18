@@ -4,7 +4,7 @@
 }
 :root {
     --gunmetal: #2b343b;
-    --cultured: #f5f5f5;
+    --cultured: var(--cultured);
     --sea-green: #47ffbf;
     --canary: #ffff85;
     --tomato: tomato;
@@ -12,6 +12,9 @@
 }
 body {
     font-family: 'Baloo Tammudu', cursive;
+}
+img {
+    filter: invert() saturate();
 }
 
 .header-logo {
@@ -28,7 +31,7 @@ body {
 
 .button-style {
     background-color: var(--canary);
-    color: var(--tomato);
+    color: var(--u-n-blue);
     text-transform: uppercase;
     padding: 1% 0.7% 0.7% 0.7%;
     width: 45%;
@@ -37,20 +40,20 @@ body {
 
 .button-style:hover {
     background-color: var(--sea-green);
-    color: var(--tomato);
+    color: var(--u-n-blue);
     box-shadow: none;
 }
 
 .button-style:focus {
     background-color: var(--sea-green);
-    color: var(--tomato);
+    color: var(--u-n-blue);
     box-shadow: none;
 }
 
 .button-style-1 {
     font-family: 'Baloo Tammudu', cursive;
-    background-color: var(--canary);
-    color: var(--tomato);
+    background-color: var(--sea-green);
+    color: var(--u-n-blue);
     text-transform: uppercase;
     padding: 1% 0.7% 0.7% 0.7%;
     width: 22%;
@@ -58,13 +61,13 @@ body {
 }
 
 .button-style-1:hover {
-    background-color: var(--sea-green);
+    background-color: var(--canary);
     color: var(--tomato);
     box-shadow: none;
 }
 
 .button-style-1:focus {
-    background-color: var(--sea-green);
+    background-color: var(--canary);
     color: var(--tomato);
     box-shadow: none;
 }
@@ -97,7 +100,7 @@ body {
 }
 
 .footer-background {
-    background-color: #BA6463;
+    background-color: var(--tomato);
     padding: 2%;
 }
 
@@ -126,7 +129,7 @@ body {
 }
 
 .text-color {
-    color: var(--tomato);
+    color: var(--u-n-blue);
     font-weight: 500;
 }
 
@@ -157,7 +160,7 @@ body {
 #to_do_data::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: var(--cultured);
 }
 
 #to_do_data::-webkit-scrollbar {
@@ -382,7 +385,7 @@ body {
     font-size: 600%;
     font-weight: 900;
     background-color: transparent;
-    color: #ffede5;
+    color: var(--cultured);
     border: none;
     margin: auto;
 }

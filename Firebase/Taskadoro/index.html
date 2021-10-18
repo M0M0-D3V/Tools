@@ -25,29 +25,10 @@
   <div class="container-fluid header-background">
     <div class="container">
       <div class="row p-2">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo-mobile">
-          <img src="assets/images/logo.svg" class="header-logo" />
-        </div>
-
-        <div class="
-              col-lg-8 col-md-8 col-sm-12 col-xs-12
-              text-right
-              button-align
-            ">
-          <button type="button" class="btn button-style rounded-pill mr-4 button-animate" data-toggle="modal"
-            data-target="#custom-timer">
-            Custom Timer
-          </button>
-          <button type="button" class="btn button-style rounded-pill button-animate" data-toggle="modal"
-            data-target="#what-pomodoro-timer">
-            What is pomodoro Timer?
-          </button>
-        </div>
-
         <div class="col-lg-12 text-center mt-4">
           <button type="button" class="btn button-style-1 rounded-pill mr-2" onclick="onPomodoroTimer()"
             id="pomodoro_timer_button">
-            Pomodoro
+            Taskadoro
           </button>
           <button type="button" class="btn button-style-1 rounded-pill mr-2" onclick="onShortTimer()"
             id="short_break_timer_button">
@@ -56,7 +37,7 @@
 
           <button type="button" class="btn button-style-1 rounded-pill mr-2" onclick="onLongTimer()"
             id="long_break_timer_button">
-            Long break
+            Long Break
           </button>
           <button type="button" class="btn button-style-1 rounded-pill" onclick="onLoopTimer()" id="loop_timer_button">
             Loop
@@ -64,7 +45,7 @@
         </div>
 
         <div class="col-lg-12 text-center mt-3">
-          <img src="assets/images/tomato-cartoon.svg" class="tomato-cartoon" id="tomato-cartoon" />
+          <img src="assets/images/tomato-cartoon.svg" class="tomato-cartoon" id="tomato-cartoon" alt="tomato-cartoon" />
 
         </div>
 
@@ -105,7 +86,7 @@
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 text-right col-xs-12 mb-2">
-              <img src="assets/images/todo-label.svg" class="work-flow" />
+              <img src="assets/images/todo-label.svg" class="work-flow" alt="work-flow" />
             </div>
 
             <div class="
@@ -130,7 +111,7 @@
       <div class="modal-content popup-background">
         <div class="modal-header">
           <h4 class="modal-title header-font">What is Pomodoro Timer?</h4>
-          <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" />
+          <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" alt="close" />
         </div>
         <div class="modal-body">
           <h6 class="header-font">Online Pomodoro Timer</h6>
@@ -180,7 +161,7 @@
       <div class="modal-content popup-background">
         <div class="modal-header">
           <h4 class="modal-title header-font">ENTER CUSTOM TIMER</h4>
-          <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" />
+          <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" alt="close" />
         </div>
         <div class="modal-body">
           <form>
@@ -218,7 +199,7 @@
       <div class="modal-content popup-background">
         <div class="modal-header">
           <h4 class="modal-title header-font">Task Manager</h4>
-          <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" onclick="todoModalClose()" />
+          <img src="assets/images/close-button.svg" class="close" data-dismiss="modal" onclick="todoModalClose()" alt="close" />
         </div>
         <div class="modal-body">
           <input type="hidden" id="type_of_todo" value="notes" />

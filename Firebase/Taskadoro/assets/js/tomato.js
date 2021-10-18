@@ -22,6 +22,7 @@ $(document).ready(function () {
 });
 var audio = new Audio('assets/sounds/beep.mp3');
 
+// **************** DOM Manipulations ************************
 var $tomato = $('#tomato-cartoon');
 
 function imageDancing() {
