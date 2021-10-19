@@ -4,7 +4,7 @@
 }
 :root {
     --gunmetal: #2b343b;
-    --cultured: var(--cultured);
+    --cultured: #f5f5f5;
     --sea-green: #47ffbf;
     --canary: #ffff85;
     --tomato: tomato;
