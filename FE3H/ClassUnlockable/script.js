@@ -20,12 +20,14 @@ console.log("you rang boss?")
 // POPULATE THE SELECT OPTIONS WITH CLASS NAMES
 let selectNames = document.getElementById("class-names")
 let classesLength = classesJSON.length
+//  start;      stop; step;
 for (let i = 0; i < classesLength; i++) {
     let newOption = document.createElement("option")
     newOption.setAttribute("value", i)
     newOption.innerHTML = classesJSON[i]["Class Name"]
     selectNames.appendChild(newOption)
 }
+
 // POPULATE STAT LIST AS OPTIONS
 let selectStats = document.getElementById("stats0")
 let stats = ["Sword", "Axe", "Bow", "Brawl", "Authority", "Reason", "Faith", "Heavy Armor", "Lance", "Riding", "Flying"]
@@ -180,10 +182,13 @@ window.runAlgorithm = function runAlgorithm() {
 
 // this function retrieves class information when it is chosen from drop down
 window.showClass = function showClass() {
-    let selected = document.getElementById("class-names").selectedIndex;
-    let idNum = document.getElementsByTagName("option")[selected].value
+    let selected = document.getElementById("class-names").selectedIndex; // 1
+    let idNum = document.getElementsByTagName("option")[selected].value  // 0
+    console.log("selected ", selected)
+    console.log("idNum ", idNum)
     let displayClass = document.getElementById("display-class")
     let thisClass = classesJSON[idNum]
+    
     displayClass.innerHTML = "<h5>Class Name:</h5>"
     displayClass.innerHTML += `<p>${thisClass["Class Name"]}</p>`
 
