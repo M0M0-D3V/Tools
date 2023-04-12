@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0.5px dotted pink; */
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+    --prussian-blue: #1d3557;
+    --celadon-blue: #457b9d;
+    --powder-blue: #a8dadc;
+    --honeydew: #f1faee;
+    --imperial-red: #e63946;
+}
+body {
+    background-color: var(--prussian-blue);
+    color: var(--honeydew);
+}
+h1 {
+    text-align: center;
+    padding: 5px;
+    border-top: 6px solid var(--powder-blue);
+    border-bottom: 6px solid var(--imperial-red);
+}
+main {
+    display: flex;
+}
+#poke-gallery {
+    flex: 5;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 500px;
+}
+#poke-view {
+    flex: 2;
+    color: var(--powder-blue)
+}
+.p-20 {
+    padding: 20px;
+}
