@@ -88,3 +88,6 @@ header button:hover {
 .image-buttons img:hover {
     background-color: var(--tomato);
 }
+h2 {
+  margin-top: 20px;
+}
