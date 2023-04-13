@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Pokedex",
+    "description": "The basics are usually the best! Featuring the original 150 pokemon and high level information about each",
+    "version": "1",
+    "author": "Monica Hong",
+    "action": {
+        "default_popup": "index.html"
+      }
+
+}
