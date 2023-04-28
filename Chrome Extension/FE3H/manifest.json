@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Fire Emblem 3 Houses - Class Unlock Checker",
+    "description": "Extension to help check what classes are available to unlock based on character stat levels",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup/index.html",
+      "default_icon": "images/felix.png"
+    },
+    "permissions": [
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "js": ["popup/script.js"]
+      }
+    ]
+  }
