@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "TabMaid",
+  "version": "1.0.0",
+  "author": "m0m0-d3v",
+  "description": "Automatically closes unused tabs after a period of time.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
