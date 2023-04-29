@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Options</title>
-</head>
-<body>
-    <h1>Options</h1>
-    <label for="timePeriod">Time Period:</label>
-    <input type="number" id="timePeriod" min="1" max="30" step="1">
-    <button id="saveButton">Save</button>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabMaid</title>
+  </head>
+  <body>
+    <h1>TabMaid Options</h1>
+    <form>
+      <label for="timePeriod">Time period (in days):</label>
+      <input type="number" id="timePeriod" name="timePeriod" min="1" max="365">
+      <button id="saveBtn" type="submit">Save</button>
+    </form>
+
+    <script src="options.js"></script>
+  </body>
 </html>

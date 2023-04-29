@@ -7,10 +7,23 @@
   "permissions": [
     "tabs",
     "storage",
-    "scripting"
+    "scripting",
+    "history"
   ],
   "background": {
     "service_worker": "background.js"
   },
-  "options_page": "options.html"
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["options.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

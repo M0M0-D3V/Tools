@@ -1,13 +1,24 @@
-// Save timePeriod setting when save button is clicked
-var save
+// Set the initial interval to 3 days (259200000 milliseconds)
+var interval = 259200000;
 
-// Get default time period from storage (set to 3 days if not present)
-chrome.storage.sync.get(["timePeriod"], function(result) {
-    var timePeriodInput = document.getElementById("timePeriod");
-    timePeriodInput.value = result.timePeriod || 3;
+// Listen for messages from options.js
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+  if (message.type === "updateInterval") {
+    // Update the interval variable with the new value
+    interval = message.interval;
+
+    // Send a response to confirm that the interval has been updated
+    sendResponse({status: "intervalUpdated"});
+  }
+});
+
+// Define a function to close unused tabs
+function closeUnusedTabs() {
+  // Get the timePeriod setting from storage (set to 3 days if not present)
+  chrome.storage.sync.get(["timePeriod"], function(result) {
     var timePeriod = result.timePeriod || 3;
     var closedTabs = [];
-  
+
     chrome.tabs.query({}, function(tabs) {
       for (var i = 0; i < tabs.length; i++) {
         var tab = tabs[i];
@@ -24,7 +35,7 @@ chrome.storage.sync.get(["timePeriod"], function(result) {
           chrome.tabs.remove(tab.id);
         }
       }
-  
+
       // Save closed tabs to history
       chrome.history.addUrl({
         url: "data:text/plain," + encodeURIComponent(JSON.stringify(closedTabs)),
@@ -32,12 +43,8 @@ chrome.storage.sync.get(["timePeriod"], function(result) {
       });
     });
   });
-  
-  // Listen for changes to time period setting
-  chrome.storage.onChanged.addListener(function(changes, namespace) {
-    if (namespace === "sync" && changes.timePeriod) {
-      var timePeriod = changes.timePeriod.newValue;
-      console.log("Time period changed to", timePeriod);
-    }
-  });
-  
+}
+
+// Call closeUnusedTabs() on an interval defined by the interval variable
+setInterval(closeUnusedTabs, interval);
+
