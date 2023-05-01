@@ -4,25 +4,24 @@
   "version": "1.0.0",
   "author": "m0m0-d3v",
   "description": "Automatically closes unused tabs after a period of time.",
-  "permissions": [
-    "tabs",
-    "storage",
-    "scripting",
-    "history"
-  ],
   "background": {
     "service_worker": "background.js"
   },
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
-  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "history"
+  ],
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "myTabMaid popup",
+    "default_popup":"popup.html"
   },
   "web_accessible_resources": [
     {
-      "resources": ["options.js"],
+      "resources": [
+        "popup.js",
+        "popup.html"
+      ],
       "matches": ["<all_urls>"]
     }
   ]
