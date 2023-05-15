@@ -1,5 +1,5 @@
 // Global decloaration of timePeriod
-var timePeriod = 3 * (1000 * 60);
+var timePeriod = 3 * (1000 * 60); // 3 minutes
 
 // Global list of Closed Tabs
 var closedTabs = [];
@@ -13,13 +13,13 @@ const closeTabs = () => {
       var lastAccessed = new Date(tab.lastAccessed);
       var now = new Date();
       var diff = now - lastAccessed;
-      var diffInMinutes = diff / 60000;
+      var diffInMinutes = diff / (1000* 60);
 
       if (diffInMinutes > timePeriod) {
         closedTabs.push({
           url: tab.url,
           title: tab.title,
-          lastAccessed: lastAccessed.toISOString();
+          lastAccessed: lastAccessed.toISOString(),
         });
         
       }
