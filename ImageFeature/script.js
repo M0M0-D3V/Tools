@@ -1,3 +1,4 @@
+// when document is ready, get all images and update the order of the list where the click and drag occurs
 $(function () {
   $("#image-list").sortable({
     update: function (event, ui) {

@@ -4,16 +4,16 @@ var timePeriod = 3 * (1000 * 60); // 3 minutes
 // Global list of Closed Tabs
 var closedTabs = [];
 
-// Close tabs that hven't been accessed in [timePeriod] days
+// Close tabs that hven't been accessed in [timePeriod] days [timePeriod] is default to 3 minutes
 const closeTabs = () => {
   chrome.tabs.query({}, (tabs) => {
     for (let i = 0; i < tabs.length; i++) {
       var tab = tabs[i];
-      console.log(tab);
+      console.log(`tab is: ${tab.title}`);
       var lastAccessed = new Date(tab.lastAccessed);
       var now = new Date();
       var diff = now - lastAccessed;
-      var diffInMinutes = diff / (1000* 60);
+      var diffInMinutes = diff / (1000 * 60);
 
       if (diffInMinutes > timePeriod) {
         closedTabs.push({
@@ -21,9 +21,10 @@ const closeTabs = () => {
           title: tab.title,
           lastAccessed: lastAccessed.toISOString(),
         });
-        
+        chrome.tabs.remove(tab.id);
       }
     }
+    // chrome.history.addUrl()
   });
 };
 
@@ -74,6 +75,6 @@ chrome.storage.sync.get(["timePeriod"], function (result) {
 chrome.storage.onChanged.addListener(function (changes, namespace) {
   if (namespace === "sync" && changes.timePeriod) {
     var timePeriod = changes.timePeriod.newValue;
-    console.log("Time period changed to", timePeriod);
+    console.log(`Time period changed to: ${timePeriod}`);
   }
 });

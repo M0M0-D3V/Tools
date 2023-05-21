@@ -1,13 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var saveButton = document.getElementById("saveButton");
-    var daysInput = document.getElementById("daysInput");
-  
-    saveButton.addEventListener("click", function() {
-      var timePeriod = parseInt(daysInput.value);
-      chrome.storage.sync.set({ timePeriod: timePeriod }, function() {
-        console.log("Time period saved:", timePeriod);
-        window.close();
-      });
+document.addEventListener("DOMContentLoaded", () => {
+  var saveButton = document.getElementById("save");
+  var numberInput = document.getElementById("numberInput");
+
+  saveButton.addEventListener("click", () => {
+    var timePeriod = parseInt(numberInput.value);
+    chrome.storage.sync.set({ timePeriod: timePeriod }, () => {
+      console.log(`Time period saved: ${timePeriod}`);
+      window.close();
     });
   });
-  
+});
+
+function validateForm() {
+  var radios = document.getElementsByName("gender");
+  var formValid = false;
+
+  var i = 0;
+  while (!formValid && i < radios.length) {
+    if (radios[i].checked) {
+      formValid = true;
+      var selectedValue = radios[i].value;
+    }
+    i++;
+  }
+
+  if (!formValid) alert("Must check some option!");
+  return formValid;
+}
