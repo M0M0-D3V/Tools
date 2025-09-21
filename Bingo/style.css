@@ -49,6 +49,11 @@ h1 {
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
+.grid div.marked {
+  background-color: #1e3a8a;
+  color: #e0e7ff
+}
+
 button {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
@@ -69,4 +74,37 @@ button:hover {
   color: #92400e;
   font-style: italic;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+#use-btn {
+  margin-left: 1rem;
+  background-color: #065f46;
+  display: none;
+}
+
+#use-btn:hover {
+  background-color: #0b7b61;
+}
+
+.marked {
+  background-color: #1e3a8a;
+  color: #e0e7ff;
+  /* text-decoration: line-through; */
+}
+
+#reset-btn {
+  margin-top: 1rem;
+  background-color: #991b1b;
+  display: none;
+}
+
+#reset-btn:hover {
+  background-color: #b91c1c;
+}
+
+#tip {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  display: none;
 }
