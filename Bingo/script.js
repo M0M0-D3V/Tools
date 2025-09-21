@@ -36,6 +36,8 @@ function activateGameMode() {
   document.getElementById("generate-btn").style.display = "none";
   // Hide the "Use This Card" button
   document.getElementById("use-btn").style.display = "none";
+  // Hide the "Save Card as Image" button
+  document.getElementById("save-btn").style.display = "none";
   // Show the tip
   document.getElementById("tip").style.display = "inline-block";
   // Show the "Start Over" button
