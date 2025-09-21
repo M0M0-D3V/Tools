@@ -40,6 +40,8 @@ function activateGameMode() {
   document.getElementById("tip").style.display = "inline-block";
   // Show the "Start Over" button
   document.getElementById("reset-btn").style.display = "inline-block";
+  // Show the "Save Card as Image" button
+  document.getElementById("save-btn").style.display = "inline-block";
 }
 
 function resetGame() {
@@ -59,4 +61,16 @@ document
   .addEventListener("click", generateBingoCard);
 
 document.getElementById("use-btn").addEventListener("click", activateGameMode);
+
 document.getElementById("reset-btn").addEventListener("click", resetGame);
+
+document.getElementById("save-btn").addEventListener("click", () => {
+  const card = document.getElementById("bingo-card");
+
+  html2canvas(card).then((canvas) => {
+    const link = document.createElement("a");
+    link.download = "bingo-card.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+  });
+});

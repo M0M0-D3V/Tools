@@ -10,14 +10,18 @@
 
 <body>
   <main class="bingo-wrapper">
-    <button id="reset-btn">Start Over</button>
     <h1>ELDER ABYSS BINGO!!</h1>
     <div id="bingo-card" class="grid"></div>
     <button id="generate-btn">Generate New Card</button>
     <button id="use-btn">Use This Card</button>
     <p id="tip">Tip: Click on a cell to mark it!</p>
   </main>
+  <div>
+    <button id="reset-btn">Start Over</button>
+    <button id="save-btn">Save Card as Image</button>
+  </div>
   <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </body>
 
 </html>

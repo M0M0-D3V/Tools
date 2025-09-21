@@ -13,6 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .bingo-wrapper {
@@ -106,5 +108,12 @@ button:hover {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: #555;
+  display: none;
+}
+
+#save-btn {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: #212836ee;
   display: none;
 }
