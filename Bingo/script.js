@@ -66,13 +66,39 @@ document.getElementById("use-btn").addEventListener("click", activateGameMode);
 
 document.getElementById("reset-btn").addEventListener("click", resetGame);
 
+// document.getElementById("save-btn").addEventListener("click", () => {
+//   const card = document.getElementById("bingo-card");
+
+//   html2canvas(card).then((canvas) => {
+//     const link = document.createElement("a");
+//     link.download = "bingo-card.png";
+//     link.href = canvas.toDataURL("image/png");
+//     link.click();
+//   });
+// });
+
 document.getElementById("save-btn").addEventListener("click", () => {
   const card = document.getElementById("bingo-card");
 
-  html2canvas(card).then((canvas) => {
-    const link = document.createElement("a");
-    link.download = "bingo-card.png";
-    link.href = canvas.toDataURL("image/png");
-    link.click();
-  });
+  // Apply temporary styling with fade-in
+  card.style.border = "4px solid #1e3a8a";
+  card.style.borderRadius = "12px";
+  card.style.padding = "20px";
+  card.style.backgroundColor = "#ffffff";
+
+  // Wait for transition to complete before capturing
+  setTimeout(() => {
+    html2canvas(card).then((canvas) => {
+      const link = document.createElement("a");
+      link.download = "bingo-card.png";
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+
+      // Restore original styling
+      card.style.border = "";
+      card.style.borderRadius = "";
+      card.style.padding = "";
+      card.style.backgroundColor = "";
+    });
+  }, 500); // 500ms matches the CSS transition
 });
