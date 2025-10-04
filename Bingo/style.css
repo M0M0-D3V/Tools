@@ -56,8 +56,8 @@ h1 {
 }
 
 #bingo-card.grid.game-mode div:hover {
-  background-color: #1e3a8a;
-  color: #e0e7ff;
+  /* background-color: #1e3a8a;
+  color: #e0e7ff; */
   cursor: pointer;
 }
 
@@ -67,8 +67,8 @@ h1 {
 }
 
 #bingo-card.grid.game-mode div.marked:hover {
-  background-color: #e0e7ff;
-  color: #1e3a8a;
+  /* background-color: #e0e7ff;
+  color: #1e3a8a; */
   cursor: pointer;
 }
 
