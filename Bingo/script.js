@@ -27,6 +27,9 @@ function generateBingoCard() {
 }
 
 function activateGameMode() {
+  const grid = document.getElementById("bingo-card");
+  grid.classList.add("game-mode");
+
   const cells = document.querySelectorAll("#bingo-card div");
   cells.forEach((cell) => {
     cell.addEventListener("click", () => {
@@ -48,6 +51,7 @@ function activateGameMode() {
 
 function resetGame() {
   generateBingoCard();
+  document.getElementById("bingo-card").classList.remove("game-mode");
   document.getElementById("reset-btn").style.display = "none";
   document.getElementById("tip").style.display = "none";
   document.getElementById("generate-btn").style.display = "inline-block";
