@@ -48,10 +48,10 @@ function activateGameMode() {
 
 function resetGame() {
   generateBingoCard();
-  document.getElementById("use-btn").style.display = "none";
   document.getElementById("reset-btn").style.display = "none";
   document.getElementById("tip").style.display = "none";
   document.getElementById("generate-btn").style.display = "inline-block";
+  document.getElementById("use-btn").style.display = "inline-block";
 }
 
 // Initial render
