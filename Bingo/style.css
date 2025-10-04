@@ -55,9 +55,15 @@ h1 {
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
+.grid div:hover {
+  background-color: #1e3a8a;
+  color: #e0e7ff;
+  cursor: pointer;
+}
+
 .grid div.marked {
   background-color: #1e3a8a;
-  color: #e0e7ff
+  color: #e0e7ff;
 }
 
 button {
