@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YQCGzC6e3p8=",
+  "dgSpecHash": "wYgMTCKHVak=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Tools\\APIs\\ContosoPizza\\ContosoPizza.csproj",
+  "projectFilePath": "d:\\Projects\\Tools\\APIs\\ContosoPizza\\ContosoPizza.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mimi_\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\mimi_\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
