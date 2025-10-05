@@ -61,7 +61,7 @@ h1 {
   color: #333;
 }
 
-#bingo-card {
+#bingo-image {
   transition: all 0.4s ease-in-out;
 }
 
@@ -168,4 +168,16 @@ button:hover {
   margin-left: 1rem;
   background-color: #212836ee;
   display: none;
+}
+
+.line-highlight {
+  animation: pulse 0.6s ease-in-out;
+  background-color: #fef3c7 !important;
+  border: 2px solid #f59e0b;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }

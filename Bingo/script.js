@@ -24,16 +24,85 @@ function generateBingoCard() {
   document.getElementById("use-btn").style.display = "inline-block";
   // Hide the "Save Card as Image" button
   document.getElementById("save-btn").style.display = "none";
+  // Hide the "Start Over" button
+  document.getElementById("reset-btn").style.display = "none";
+  // Hide the tip
+  document.getElementById("tip").style.display = "none";
+  // Hide the line count display
+  document.getElementById("line-count").style.display = "none";
 }
 
 function activateGameMode() {
   const grid = document.getElementById("bingo-card");
   grid.classList.add("game-mode");
 
+  const markedIndexes = new Set();
+  const completedLines = new Set();
+  /*
+  Logic for Winning Line conditions
+  Grid Indices:
+  0  1  2  3  4
+  5  6  7  8  9
+  10 11 12 13 14
+  15 16 17 18 19
+  20 21 22 23 24
+  */
+  const winningLines = [
+    // Rows
+    [0, 1, 2, 3, 4],
+    [5, 6, 7, 8, 9],
+    [10, 11, 12, 13, 14],
+    [15, 16, 17, 18, 19],
+    [20, 21, 22, 23, 24],
+    // Columns
+    [0, 5, 10, 15, 20],
+    [1, 6, 11, 16, 21],
+    [2, 7, 12, 17, 22],
+    [3, 8, 13, 18, 23],
+    [4, 9, 14, 19, 24],
+    // Diagonals
+    [0, 6, 12, 18, 24],
+    [4, 8, 12, 16, 20],
+  ];
+
+  function checkForCompletedLines() {
+    winningLines.forEach((line, i) => {
+      const isComplete = line.every((idx) => markedIndexes.has(idx));
+
+      if (isComplete && !completedLines.has(i)) {
+        completedLines.add(i);
+        animateLine(line);
+        updateLineCountDisplay();
+      }
+    });
+  }
+
+  function animateLine(line) {
+    line.forEach((idx) => {
+      cells[idx].classList.add("line-highlight");
+    });
+  }
+
+  function updateLineCountDisplay() {
+    document.getElementById(
+      "line-count"
+    ).textContent = `Lines Completed: ${completedLines.size}`;
+  }
+
   const cells = document.querySelectorAll("#bingo-card div");
-  cells.forEach((cell) => {
+  cells.forEach((cell, index) => {
     cell.addEventListener("click", () => {
       cell.classList.toggle("marked");
+
+      if (cell.classList.contains("marked")) {
+        markedIndexes.add(index);
+      } else {
+        markedIndexes.delete(index);
+      }
+
+      // Check for winning lines
+      checkForCompletedLines();
+      console.log(`completedLines:` + [...completedLines]);
     });
   });
 
@@ -41,6 +110,9 @@ function activateGameMode() {
   document.getElementById("generate-btn").style.display = "none";
   // Hide the "Use This Card" button
   document.getElementById("use-btn").style.display = "none";
+  // Show the line count display
+  document.getElementById("line-count").style.display = "block";
+  updateLineCountDisplay();
   // Show the tip
   document.getElementById("tip").style.display = "inline-block";
   // Show the "Start Over" button
@@ -82,7 +154,7 @@ document.getElementById("reset-btn").addEventListener("click", resetGame);
 // });
 
 document.getElementById("save-btn").addEventListener("click", () => {
-  const card = document.getElementById("bingo-card");
+  const card = document.getElementById("bingo-image");
 
   // Apply temporary styling with fade-in
   card.style.border = "4px solid #1e3a8a";
