@@ -173,6 +173,7 @@ button:hover {
 .line-highlight {
   animation: pulse 0.6s ease-in-out;
   background-color: #fef3c7 !important;
+  color: #1e3a8a !important;
   border: 2px solid #f59e0b;
 }
 
