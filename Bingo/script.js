@@ -97,25 +97,42 @@ function activateGameMode() {
       if (cell.classList.contains("marked")) {
         markedIndexes.add(index);
         console.log(`Marked index: ${index}`);
+        // Check for winning lines
+        checkForCompletedLines();
+        console.log(`completedLines:` + [...completedLines]);
       } else {
         markedIndexes.delete(index);
         console.log(`Unmarked index: ${index}`);
         // If unmarking a cell, also remove any completed lines that included this cell
+        const linesToRemove = [];
+
         completedLines.forEach((lineIdx) => {
-          if (winningLines[lineIdx].includes(index)) {
-            completedLines.delete(lineIdx);
-            // Remove highlight from the line
-            winningLines[lineIdx].forEach((idx) => {
-              cells[idx].classList.remove("line-highlight");
-            });
+          const line = winningLines[lineIdx];
+          if (line.includes(index)) {
+            const isStillComplete = line.every((idx) => markedIndexes.has(idx));
+            if (!isStillComplete) {
+              linesToRemove.push(lineIdx);
+            }
           }
+        });
+
+        linesToRemove.forEach((lineIdx) => {
+          completedLines.delete(lineIdx);
+          const line = winningLines[lineIdx];
+          line.forEach((idx) => {
+            // Check if this cell is part of any other still-completed line
+            const stillInCompletedLine = [...completedLines].some(
+              (otherIdx) =>
+                winningLines[otherIdx].includes(idx) &&
+                winningLines[otherIdx].every((i) => markedIndexes.has(i))
+            );
+            if (!stillInCompletedLine) {
+              cells[idx].classList.remove("line-highlight");
+            }
+          });
         });
         updateLineCountDisplay();
       }
-
-      // Check for winning lines
-      checkForCompletedLines();
-      console.log(`completedLines:` + [...completedLines]);
     });
   });
 
