@@ -100,6 +100,17 @@ function activateGameMode() {
       } else {
         markedIndexes.delete(index);
         console.log(`Unmarked index: ${index}`);
+        // If unmarking a cell, also remove any completed lines that included this cell
+        completedLines.forEach((lineIdx) => {
+          if (winningLines[lineIdx].includes(index)) {
+            completedLines.delete(lineIdx);
+            // Remove highlight from the line
+            winningLines[lineIdx].forEach((idx) => {
+              cells[idx].classList.remove("line-highlight");
+            });
+          }
+        });
+        updateLineCountDisplay();
       }
 
       // Check for winning lines
