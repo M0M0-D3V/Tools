@@ -21,10 +21,32 @@
     <button id="use-btn">Use This Card</button>
     <p id="tip">Tip: Click on a cell to mark it!</p>
   </main>
+  <div id="color-settings">
+    <label>
+      Grid Color:
+      <input type="color" id="grid-color" value="#e0e7ff">
+    </label>
+    <label>
+      Marked Color:
+      <input type="color" id="marked-color" value="#1e3a8a">
+    </label>
+    <br>
+    <label>
+      Line Color:
+      <input type="color" id="line-mark-color" value="#fef3c7">
+    </label>
+    <label>
+      Outline Color:
+      <input type="color" id="line-color" value="#f59e0b">
+    </label>
+  </div>
   <div>
     <button id="reset-btn">Start Over</button>
     <button id="save-btn">Save Card as Image</button>
   </div>
+  <button id="theme-toggle" aria-label="Toggle theme">
+    <span id="theme-icon">🌙</span>
+  </button>
   <script src="script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </body>

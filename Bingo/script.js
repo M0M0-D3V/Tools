@@ -1,6 +1,11 @@
 // meow
 console.log("yes boss?");
 
+const gridColorPicker = document.getElementById("grid-color");
+const markedColorPicker = document.getElementById("marked-color");
+const lineMarkedColorPicker = document.getElementById("line-mark-color");
+const lineColorPicker = document.getElementById("line-color");
+
 function generateBingoCard() {
   const card = document.getElementById("bingo-card");
   card.innerHTML = ""; // Clear previous card
@@ -158,6 +163,14 @@ function resetGame() {
   document.getElementById("tip").style.display = "none";
   document.getElementById("generate-btn").style.display = "inline-block";
   document.getElementById("use-btn").style.display = "inline-block";
+  document.documentElement.style.setProperty("--grid-color", "#e0e7ff");
+  document.documentElement.style.setProperty("--marked-color", "#1e3a8a");
+  document.documentElement.style.setProperty("--line-mark-color", "#fef3c7");
+  document.documentElement.style.setProperty("--line-color", "#f59e0b");
+  document.getElementById("grid-color").value = "#e0e7ff";
+  document.getElementById("marked-color").value = "#1e3a8a";
+  document.getElementById("line-mark-color").value = "#fef3c7";
+  document.getElementById("line-color").value = "#f59e0b";
 }
 
 // Initial render
@@ -207,4 +220,45 @@ document.getElementById("save-btn").addEventListener("click", () => {
       card.style.backgroundColor = "";
     });
   }, 500); // 500ms matches the CSS transition
+});
+
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+
+function setTheme(theme) {
+  document.body.classList.remove("light-mode", "dark-mode");
+  document.body.classList.add(theme);
+  localStorage.setItem("theme", theme);
+  themeIcon.textContent = theme === "dark-mode" ? "☀️" : "🌙";
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme") || "light-mode";
+setTheme(savedTheme);
+
+// Toggle on click
+themeToggle.addEventListener("click", () => {
+  const newTheme = document.body.classList.contains("dark-mode")
+    ? "light-mode"
+    : "dark-mode";
+  setTheme(newTheme);
+});
+
+gridColorPicker.addEventListener("input", (e) => {
+  document.documentElement.style.setProperty("--grid-color", e.target.value);
+});
+
+markedColorPicker.addEventListener("input", (e) => {
+  document.documentElement.style.setProperty("--marked-color", e.target.value);
+});
+
+lineColorPicker.addEventListener("input", (e) => {
+  document.documentElement.style.setProperty("--line-color", e.target.value);
+});
+
+lineMarkedColorPicker.addEventListener("input", (e) => {
+  document.documentElement.style.setProperty(
+    "--line-mark-color",
+    e.target.value
+  );
 });

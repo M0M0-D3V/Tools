@@ -5,6 +5,14 @@
   box-sizing: border-box;
   /* border: 1px dotted pink; */
 }
+
+:root {
+  --grid-color: #e0e7ff;
+  --marked-color: #1e3a8a;
+  --line-mark-color: #fef3c7;
+  --line-color: #f59e0b;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f7f6;
@@ -47,10 +55,42 @@ body {
   }
 }
 
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+body.light-mode #theme-icon {
+  content: "🌙";
+}
+
+body.dark-mode #theme-icon {
+  content: "☀️";
+}
+
 .bingo-wrapper {
   text-align: center;
   padding: 2rem;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -58,7 +98,7 @@ body {
 h1 {
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: #333;
+  /* color: #333; */
 }
 
 #bingo-image {
@@ -78,17 +118,22 @@ h1 {
 .grid div {
   overflow: hidden;
   max-width: 100%;
-  background-color: #e0e7ff;
+  background-color: var(--grid-color);
+  transition: background-color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 1.2rem;
-  color: #1e3a8a;
+  color: var(--marked-color);
   border-radius: 1vw;
   padding: 1rem;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
   aspect-ratio: 1 / 1;
+}
+
+#bingo-card.dark-mode div {
+  border-color: #888;
 }
 
 #bingo-card.grid.game-mode div:hover {
@@ -98,8 +143,8 @@ h1 {
 }
 
 .grid div.marked {
-  background-color: #1e3a8a;
-  color: #e0e7ff;
+  background-color: var(--marked-color);
+  color: var(--grid-color);
 }
 
 #bingo-card.grid.game-mode div.marked:hover {
@@ -141,8 +186,8 @@ button:hover {
 }
 
 .marked {
-  background-color: #1e3a8a;
-  color: #e0e7ff;
+  background-color: var(--marked-color);
+  color: var(--grid-color);
   /* text-decoration: line-through; */
 }
 
@@ -156,11 +201,20 @@ button:hover {
   background-color: #b91c1c;
 }
 
+#line-count {
+  /* color: #333; */
+}
+
 #tip {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #555;
+  /* color: #555; */
   display: none;
+}
+
+label {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 #save-btn {
@@ -172,9 +226,9 @@ button:hover {
 
 .line-highlight {
   animation: pulse 0.6s ease-in-out;
-  background-color: #fef3c7 !important;
-  color: #1e3a8a !important;
-  border: 2px solid #f59e0b;
+  background-color: var(--line-mark-color) !important;
+  color: var(--marked-color) !important;
+  border: 2px solid var(--line-color);
 }
 
 @keyframes pulse {
